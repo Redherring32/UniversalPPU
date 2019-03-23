@@ -1,0 +1,16 @@
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\bin\Release\UniversalPpuConfig.exe
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\bin\Release\UniversalPpuConfig.pdb
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.FormMain.resources
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.Properties.Resources.resources
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.csproj.GenerateResource.Cache
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.exe
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.pdb
+C:\Users\Spork\documents\visual studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.csprojResolveAssemblyReference.cache
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.exe
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.pdb
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\bin\Release\UniversalPpuConfig.exe
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\bin\Release\UniversalPpuConfig.pdb
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.csprojResolveAssemblyReference.cache
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.FormMain.resources
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.Properties.Resources.resources
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Release\UniversalPpuConfig.csproj.GenerateResource.Cache

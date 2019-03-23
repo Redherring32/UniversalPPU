@@ -1,0 +1,7 @@
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\bin\Release\PaletteMaker.exe
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\bin\Release\PaletteMaker.pdb
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Release\PaletteMaker.Form1.resources
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Release\PaletteMaker.Properties.Resources.resources
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Release\PaletteMaker.csproj.GenerateResource.Cache
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Release\PaletteMaker.exe
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Release\PaletteMaker.pdb

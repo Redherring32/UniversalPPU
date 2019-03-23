@@ -1,0 +1,312 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"55 C:/Program Files (x86)/Microchip/xc8/v1.21/include\string.h
+[v _strlen `(ui ~T0 @X0 0 ef1`*Cuc ]
+[; ;include\string.h: 4: typedef int ptrdiff_t;
+[; ;include\string.h: 5: typedef unsigned size_t;
+[; ;include\string.h: 6: typedef unsigned short wchar_t;
+[; ;include\string.h: 9: extern int errno;
+[; ;include\string.h: 22: extern void * memcpy(void *, const void *, size_t);
+[; ;include\string.h: 23: extern void * memmove(void *, const void *, size_t);
+[; ;include\string.h: 24: extern void * memset(void *, int, size_t);
+[; ;include\string.h: 35: extern char * strcat(char *, const char *);
+[; ;include\string.h: 36: extern char * strcpy(char *, const char *);
+[; ;include\string.h: 37: extern char * strncat(char *, const char *, size_t);
+[; ;include\string.h: 38: extern char * strncpy(char *, const char *, size_t);
+[; ;include\string.h: 39: extern char * strdup(const char *);
+[; ;include\string.h: 40: extern char * strtok(char *, const char *);
+[; ;include\string.h: 43: extern int memcmp(const void *, const void *, size_t);
+[; ;include\string.h: 44: extern int strcmp(const char *, const char *);
+[; ;include\string.h: 45: extern int stricmp(const char *, const char *);
+[; ;include\string.h: 46: extern int strncmp(const char *, const char *, size_t);
+[; ;include\string.h: 47: extern int strnicmp(const char *, const char *, size_t);
+[; ;include\string.h: 48: extern void * memchr(const void *, int, size_t);
+[; ;include\string.h: 49: extern size_t strcspn(const char *, const char *);
+[; ;include\string.h: 50: extern char * strpbrk(const char *, const char *);
+[; ;include\string.h: 51: extern size_t strspn(const char *, const char *);
+[; ;include\string.h: 52: extern char * strstr(const char *, const char *);
+[; ;include\string.h: 53: extern char * stristr(const char *, const char *);
+[; ;include\string.h: 54: extern char * strerror(int);
+[; ;include\string.h: 55: extern size_t strlen(const char *);
+[; ;include\string.h: 56: extern char * strchr(const char *, int);
+[; ;include\string.h: 57: extern char * strichr(const char *, int);
+[; ;include\string.h: 58: extern char * strrchr(const char *, int);
+[; ;include\string.h: 59: extern char * strrichr(const char *, int);
+[; ;intelHex.h: 15: extern unsigned char IntelHex_Data[64];
+[; ;intelHex.h: 16: extern unsigned char IntelHex_ByteCount, IntelHex_RecordType;
+[; ;intelHex.h: 17: extern unsigned int IntelHex_StartAddr;
+[; ;intelHex.h: 19: unsigned char HexToByte(char upperNibble, char lowerNibble);
+[; ;intelHex.h: 20: int ParseIntelHex(char *line);
+"4 intelHex.c
+[v _IntelHex_Data `uc ~T0 @X0 -> 64 `i e ]
+[; ;intelHex.c: 4: unsigned char IntelHex_Data[64];
+"5
+[v _IntelHex_ByteCount `uc ~T0 @X0 1 e ]
+[v _IntelHex_RecordType `uc ~T0 @X0 1 e ]
+[; ;intelHex.c: 5: unsigned char IntelHex_ByteCount, IntelHex_RecordType;
+"6
+[v _IntelHex_StartAddr `ui ~T0 @X0 1 e ]
+[; ;intelHex.c: 6: unsigned int IntelHex_StartAddr;
+"9
+[v _HexToByte `(uc ~T0 @X0 1 ef2`uc`uc ]
+{
+[; ;intelHex.c: 8: unsigned char HexToByte(char upperNibble, char lowerNibble)
+[; ;intelHex.c: 9: {
+[e :U _HexToByte ]
+[v _upperNibble `uc ~T0 @X0 1 r1 ]
+[v _lowerNibble `uc ~T0 @X0 1 r2 ]
+[f ]
+"10
+[v _returnVal `uc ~T0 @X0 1 a ]
+[; ;intelHex.c: 10: unsigned char returnVal;
+[; ;intelHex.c: 12: if (upperNibble >= 'A')
+"12
+[e $ ! >= -> _upperNibble `ui -> 65 `ui 2  ]
+[; ;intelHex.c: 13: {
+"13
+{
+[; ;intelHex.c: 14: returnVal = (upperNibble - 'A' + 10);
+"14
+[e = _returnVal -> + - -> _upperNibble `ui -> 65 `ui -> -> 10 `i `ui `uc ]
+"15
+}
+[; ;intelHex.c: 15: }
+[e $U 3  ]
+"16
+[e :U 2 ]
+[; ;intelHex.c: 16: else
+[; ;intelHex.c: 17: {
+"17
+{
+[; ;intelHex.c: 18: returnVal = (upperNibble - '0');
+"18
+[e = _returnVal -> - -> _upperNibble `ui -> 48 `ui `uc ]
+"19
+}
+[e :U 3 ]
+[; ;intelHex.c: 19: }
+[; ;intelHex.c: 21: returnVal = returnVal << 4;
+"21
+[e = _returnVal -> << -> _returnVal `i -> 4 `i `uc ]
+[; ;intelHex.c: 23: if (lowerNibble >= 'A')
+"23
+[e $ ! >= -> _lowerNibble `ui -> 65 `ui 4  ]
+[; ;intelHex.c: 24: {
+"24
+{
+[; ;intelHex.c: 25: returnVal += (lowerNibble - 'A' + 10);
+"25
+[e =+ _returnVal -> + - -> _lowerNibble `ui -> 65 `ui -> -> 10 `i `ui `uc ]
+"26
+}
+[; ;intelHex.c: 26: }
+[e $U 5  ]
+"27
+[e :U 4 ]
+[; ;intelHex.c: 27: else
+[; ;intelHex.c: 28: {
+"28
+{
+[; ;intelHex.c: 29: returnVal += (lowerNibble - '0');
+"29
+[e =+ _returnVal -> - -> _lowerNibble `ui -> 48 `ui `uc ]
+"30
+}
+[e :U 5 ]
+[; ;intelHex.c: 30: }
+[; ;intelHex.c: 32: return returnVal;
+"32
+[e ) _returnVal ]
+[e $UE 1  ]
+[; ;intelHex.c: 33: }
+"33
+[e :UE 1 ]
+}
+"36
+[v _ParseIntelHex `(i ~T0 @X0 1 ef1`*uc ]
+{
+[; ;intelHex.c: 35: int ParseIntelHex(char *line)
+[; ;intelHex.c: 36: {
+[e :U _ParseIntelHex ]
+[v _line `*uc ~T0 @X0 1 r1 ]
+[f ]
+"37
+[v _lineLength `uc ~T0 @X0 1 a ]
+[v _n `uc ~T0 @X0 1 a ]
+[; ;intelHex.c: 37: unsigned char lineLength, n;
+[; ;intelHex.c: 39: lineLength = strlen(line);
+"39
+[e = _lineLength -> ( _strlen (1 -> _line `*Cuc `uc ]
+[; ;intelHex.c: 41: if (lineLength < 11)
+"41
+[e $ ! < -> _lineLength `i -> 11 `i 7  ]
+[; ;intelHex.c: 42: {
+"42
+{
+[; ;intelHex.c: 43: return 1;
+"43
+[e ) -> 1 `i ]
+[e $UE 6  ]
+"44
+}
+[e :U 7 ]
+[; ;intelHex.c: 44: }
+[; ;intelHex.c: 46: if (line[0] != ':')
+"46
+[e $ ! != -> *U + _line * -> -> 0 `i `x -> -> # *U _line `i `x `ui -> 58 `ui 8  ]
+[; ;intelHex.c: 47: {
+"47
+{
+[; ;intelHex.c: 48: return 2;
+"48
+[e ) -> 2 `i ]
+[e $UE 6  ]
+"49
+}
+[e :U 8 ]
+[; ;intelHex.c: 49: }
+[; ;intelHex.c: 51: IntelHex_ByteCount = HexToByte(line[1], line[2]);
+"51
+[e = _IntelHex_ByteCount ( _HexToByte (2 , *U + _line * -> -> 1 `i `x -> -> # *U _line `i `x *U + _line * -> -> 2 `i `x -> -> # *U _line `i `x ]
+[; ;intelHex.c: 52: IntelHex_StartAddr = (((unsigned int)HexToByte(line[3], line[4])) << 8) | HexToByte(line[5], line[6]);
+"52
+[e = _IntelHex_StartAddr | << -> ( _HexToByte (2 , *U + _line * -> -> 3 `i `x -> -> # *U _line `i `x *U + _line * -> -> 4 `i `x -> -> # *U _line `i `x `ui -> 8 `i -> ( _HexToByte (2 , *U + _line * -> -> 5 `i `x -> -> # *U _line `i `x *U + _line * -> -> 6 `i `x -> -> # *U _line `i `x `ui ]
+[; ;intelHex.c: 53: IntelHex_RecordType = HexToByte(line[7], line[8]);
+"53
+[e = _IntelHex_RecordType ( _HexToByte (2 , *U + _line * -> -> 7 `i `x -> -> # *U _line `i `x *U + _line * -> -> 8 `i `x -> -> # *U _line `i `x ]
+[; ;intelHex.c: 55: if (IntelHex_RecordType == 0)
+"55
+[e $ ! == -> _IntelHex_RecordType `i -> 0 `i 9  ]
+[; ;intelHex.c: 56: {
+"56
+{
+[; ;intelHex.c: 57: if (lineLength != ((IntelHex_ByteCount * 2) + 11))
+"57
+[e $ ! != -> _lineLength `i + * -> _IntelHex_ByteCount `i -> 2 `i -> 11 `i 10  ]
+[; ;intelHex.c: 58: {
+"58
+{
+[; ;intelHex.c: 59: return 3;
+"59
+[e ) -> 3 `i ]
+[e $UE 6  ]
+"60
+}
+[e :U 10 ]
+[; ;intelHex.c: 60: }
+[; ;intelHex.c: 62: for (n = 0; n < IntelHex_ByteCount; n++)
+"62
+{
+[e = _n -> -> 0 `i `uc ]
+[e $U 14  ]
+"63
+[e :U 11 ]
+[; ;intelHex.c: 63: {
+{
+[; ;intelHex.c: 64: IntelHex_Data[n] = HexToByte(line[9 + (n * 2)], line[10 + (n * 2)]);
+"64
+[e = *U + &U _IntelHex_Data * -> _n `ux -> -> # *U &U _IntelHex_Data `ui `ux ( _HexToByte (2 , *U + _line * -> + -> 9 `i * -> _n `i -> 2 `i `x -> -> # *U _line `i `x *U + _line * -> + -> 10 `i * -> _n `i -> 2 `i `x -> -> # *U _line `i `x ]
+"65
+}
+"62
+[e ++ _n -> -> 1 `i `uc ]
+[e :U 14 ]
+[e $ < -> _n `i -> _IntelHex_ByteCount `i 11  ]
+[e :U 12 ]
+"65
+}
+"66
+}
+[; ;intelHex.c: 65: }
+[; ;intelHex.c: 66: }
+[e $U 15  ]
+"67
+[e :U 9 ]
+[; ;intelHex.c: 67: else if (IntelHex_RecordType == 1)
+[e $ ! == -> _IntelHex_RecordType `i -> 1 `i 16  ]
+[; ;intelHex.c: 68: {
+"68
+{
+[; ;intelHex.c: 69: if (IntelHex_ByteCount != 0)
+"69
+[e $ ! != -> _IntelHex_ByteCount `i -> 0 `i 17  ]
+[; ;intelHex.c: 70: {
+"70
+{
+[; ;intelHex.c: 71: return 4;
+"71
+[e ) -> 4 `i ]
+[e $UE 6  ]
+"72
+}
+[e :U 17 ]
+"73
+}
+[; ;intelHex.c: 72: }
+[; ;intelHex.c: 73: }
+[e $U 18  ]
+"74
+[e :U 16 ]
+[; ;intelHex.c: 74: else
+[; ;intelHex.c: 75: {
+"75
+{
+[; ;intelHex.c: 76: return 5;
+"76
+[e ) -> 5 `i ]
+[e $UE 6  ]
+"77
+}
+[e :U 18 ]
+[e :U 15 ]
+"79
+[v _checksum `uc ~T0 @X0 1 a ]
+[; ;intelHex.c: 77: }
+[; ;intelHex.c: 79: unsigned char checksum = 0;
+[e = _checksum -> -> 0 `i `uc ]
+[; ;intelHex.c: 80: for (n = 1; n < (lineLength - 2); n += 2)
+"80
+{
+[e = _n -> -> 1 `i `uc ]
+[e $U 22  ]
+"81
+[e :U 19 ]
+[; ;intelHex.c: 81: {
+{
+[; ;intelHex.c: 82: checksum += HexToByte(line[n], line[n + 1]);
+"82
+[e =+ _checksum ( _HexToByte (2 , *U + _line * -> _n `ux -> -> # *U _line `ui `ux *U + _line * -> + -> _n `i -> 1 `i `x -> -> # *U _line `i `x ]
+"83
+}
+"80
+[e =+ _n -> -> 2 `i `uc ]
+[e :U 22 ]
+[e $ < -> _n `i - -> _lineLength `i -> 2 `i 19  ]
+[e :U 20 ]
+"83
+}
+[; ;intelHex.c: 83: }
+[; ;intelHex.c: 85: checksum = (checksum ^ 0xFF) + 1;
+"85
+[e = _checksum -> + ^ -> _checksum `i -> 255 `i -> 1 `i `uc ]
+[; ;intelHex.c: 87: if (checksum != HexToByte(line[lineLength - 2], line[lineLength - 1]))
+"87
+[e $ ! != -> _checksum `i -> ( _HexToByte (2 , *U + _line * -> - -> _lineLength `i -> 2 `i `x -> -> # *U _line `i `x *U + _line * -> - -> _lineLength `i -> 1 `i `x -> -> # *U _line `i `x `i 23  ]
+[; ;intelHex.c: 88: {
+"88
+{
+[; ;intelHex.c: 89: return 6;
+"89
+[e ) -> 6 `i ]
+[e $UE 6  ]
+"90
+}
+[e :U 23 ]
+[; ;intelHex.c: 90: }
+[; ;intelHex.c: 92: return 0;
+"92
+[e ) -> 0 `i ]
+[e $UE 6  ]
+[; ;intelHex.c: 93: }
+"93
+[e :UE 6 ]
+}

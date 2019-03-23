@@ -1,0 +1,1478 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+end_init CODE 0 0 0 4 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/default/production\UniversalPPU.X.production.obj
+mediumconst MEDIUMCONST 0 FEC2 FEC2 13E 1
+text53 CODE 0 E872 E872 16 1
+text52 CODE 0 E85E E85E 14 1
+text51 CODE 0 E888 E888 18 1
+text50 CODE 0 E8E8 E8E8 1A 1
+text49 CODE 0 EEF0 EEF0 80 1
+text48 CODE 0 E9AE E9AE 22 1
+text47 CODE 0 E9D0 E9D0 22 1
+text46 CODE 0 EBA8 EBA8 3A 1
+text45 CODE 0 F16C F16C 194 1
+text44 CODE 0 E80E E80E A 1
+text43 CODE 0 E8A0 E8A0 18 1
+text42 CODE 0 EC56 EC56 3C 1
+text41 CODE 0 E818 E818 A 1
+text40 CODE 0 E7E6 E7E6 8 1
+text39 CODE 0 E7EE E7EE 8 1
+text38 CODE 0 E936 E936 1E 1
+text37 CODE 0 F000 F000 B2 1
+text36 CODE 0 EE04 EE04 70 1
+text35 CODE 0 E822 E822 A 1
+text34 CODE 0 E7F6 E7F6 8 1
+text33 CODE 0 E7FE E7FE 8 1
+text32 CODE 0 E8B8 E8B8 18 1
+text31 CODE 0 E806 E806 8 1
+text30 CODE 0 E8D0 E8D0 18 1
+text29 CODE 0 E954 E954 1E 1
+text28 CODE 0 E9F2 E9F2 26 1
+text27 CODE 0 E82C E82C A 1
+text26 CODE 0 E902 E902 1A 1
+text25 CODE 0 EF70 EF70 90 1
+text24 CODE 0 EA44 EA44 2E 1
+text23 CODE 0 E840 E840 E 1
+text22 CODE 0 F0B2 F0B2 BA 1
+text21 CODE 0 ECD4 ECD4 46 1
+text20 CODE 0 EA18 EA18 2C 1
+text19 CODE 0 EA72 EA72 2E 1
+text18 CODE 0 EBE2 EBE2 3A 1
+text17 CODE 0 F300 F300 24E 1
+text16 CODE 0 E836 E836 A 1
+text15 CODE 0 EC92 EC92 42 1
+text14 CODE 0 E7E0 E7E0 6 1
+text13 CODE 0 EAA0 EAA0 34 1
+text12 CODE 0 EE74 EE74 7C 1
+text11 CODE 0 E91C E91C 1A 1
+text10 CODE 0 EB3C EB3C 36 1
+text9 CODE 0 E84E E84E 10 1
+text8 CODE 0 EC1C EC1C 3A 1
+text7 CODE 0 E972 E972 1E 1
+text6 CODE 0 EAD4 EAD4 34 1
+text5 CODE 0 EB08 EB08 34 1
+text4 CODE 0 EB72 EB72 36 1
+text3 CODE 0 E990 E990 1E 1
+text2 CODE 0 ED64 ED64 4C 1
+text1 CODE 0 EDB0 EDB0 54 1
+text0 CODE 0 F54E F54E 974 1
+cstackCOMRAM COMRAM 1 1 1 25 1
+bssBIGRAM BIGRAM 1 200 200 101 1
+bssBANK1 BANK1 1 100 100 100 1
+bssBANK0 BANK0 1 60 60 40 1
+bssCOMRAM COMRAM 1 26 26 6 1
+cinit CODE 0 ED1A ED1A 4A 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0000A0-0000FF 1
+BANK10 000A00-000AFF 1
+BANK11 000B00-000BFF 1
+BANK12 000C00-000CFF 1
+BANK13 000D00-000DFF 1
+BANK14 000E00-000EFF 1
+BANK15 000F00-000F37 1
+BANK3 000301-0003FF 1
+BANK4 000400-0004FF 1
+BANK5 000500-0005FF 1
+BANK6 000600-0006FF 1
+BANK7 000700-0007FF 1
+BANK8 000800-0008FF 1
+BANK9 000900-0009FF 1
+BIGRAM 00002C-00005F 1
+BIGRAM 0000A0-0000FF 1
+BIGRAM 000301-000F37 1
+CODE 000004-00E7DF 1
+COMRAM 00002C-00005F 1
+CONST 000004-00E7DF 1
+EEDATA F00000-F003FF 1
+MEDIUMCONST 001000-00E7DF 1
+RAM 0000A0-0000FF 1
+RAM 000301-000F37 1
+SFR 000F38-000FFF 1
+SMALLCONST 001000-00E7DF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\UniversalPPU.X.production.obj
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\busy_eep.c":14 E7E0 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\busy_eep.c":15 E7E2 text14 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\busy_eep.c":14 E7E4 text14 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":24 E7E6 text40 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":25 E7EC text40 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":29 E7EE text39 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":30 E7F4 text39 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":12 E7F6 text34 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":13 E7FC text34 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":22 E7FE text33 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":23 E804 text33 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":27 E806 text31 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":28 E80C text31 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":39 E80E text44 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":9 E818 text41 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":10 E822 text35 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":11 E82A text35 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":15 E82C text27 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":16 E832 text27 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":17 E834 text27 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":12 E836 text16 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":13 E83C text16 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":12 E83E text16 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":6 E840 text23 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":7 E848 text23 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":8 E84C text23 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":271 E84E text9 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":272 E85A text9 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":271 E85C text9 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":80 E85E text52 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":81 E862 text52 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":82 E866 text52 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":83 E86A text52 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":85 E870 text52 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\d10ktcyx.c":11 E872 text53 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\d10ktcyx.c":12 E882 text53 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":37 E888 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":38 E88E text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":39 E892 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":40 E894 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":41 E896 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":42 E898 text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":43 E89A text51 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\read_B.c":44 E89C text51 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":62 E8A0 text43 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":63 E8A8 text43 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":65 E8AE text43 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":67 E8B2 text43 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":70 E8B6 text43 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":126 E8B8 text32 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":127 E8BC text32 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":133 E8C0 text32 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":134 E8C4 text32 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":135 E8C8 text32 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":137 E8CE text32 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":112 E8D0 text30 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":113 E8D8 text30 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":116 E8DE text30 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":119 E8E2 text30 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":122 E8E6 text30 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":107 E8E8 text50 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":109 E8FA text50 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":111 E8FE text50 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":80 E902 text26 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":82 E914 text26 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":84 E918 text26 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":75 E91C text11 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":76 E924 text11 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":79 E92A text11 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":82 E92E text11 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":84 E932 text11 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":114 E936 text38 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":117 E93A text38 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":122 E944 text38 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":125 E948 text38 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":130 E950 text38 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":125 E952 text38 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":141 E954 text29 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":142 E958 text29 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":144 E964 text29 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":146 E96C text29 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":147 E970 text29 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":261 E972 text7 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":262 E976 text7 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":264 E982 text7 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":266 E98A text7 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":267 E98E text7 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":151 E990 text3 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":152 E994 text3 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":154 E9A0 text3 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":156 E9A8 text3 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":157 E9AC text3 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":21 E9AE text48 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":22 E9B4 text48 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":23 E9B8 text48 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":25 E9BE text48 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":26 E9C2 text48 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":27 E9C8 text48 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":28 E9CE text48 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":47 E9D0 text47 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":48 E9D6 text47 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":49 E9DA text47 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":51 E9E0 text47 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":52 E9E4 text47 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":53 E9EA text47 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":54 E9F0 text47 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":194 E9F2 text28 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":195 E9F6 text28 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":196 EA02 text28 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":198 EA0A text28 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":200 EA12 text28 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":201 EA16 text28 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":17 EA18 text20 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":19 EA1A text20 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":20 EA2C text20 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":17 EA30 text20 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":22 EA40 text20 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":17 EA42 text20 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":60 EA44 text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":61 EA4A text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":62 EA4C text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":64 EA52 text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":65 EA58 text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":66 EA5E text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":67 EA64 text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":68 EA68 text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpgaRegs.c":70 EA6E text24 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":12 EA72 text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":14 EA78 text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":18 EA7E text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":21 EA84 text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":23 EA8A text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":25 EA90 text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":29 EA96 text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":32 EA9C text19 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":10 EAA0 text13 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":11 EAAE text13 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":13 EAB2 text13 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":17 EAB8 text13 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":20 EABE text13 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":21 EACE text13 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":22 EAD2 text13 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":64 EAD4 text6 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":65 EAE2 text6 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":67 EAE6 text6 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":71 EAEC text6 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":74 EAF2 text6 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":75 EB02 text6 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":76 EB06 text6 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":91 EB08 text5 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":92 EB16 text5 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":94 EB1A text5 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":98 EB20 text5 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":101 EB26 text5 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":102 EB36 text5 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":103 EB3A text5 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":180 EB3C text10 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":181 EB40 text10 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":183 EB4C text10 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":185 EB58 text10 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":186 EB5E text10 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":188 EB62 text10 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":189 EB6E text10 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":163 EB72 text4 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":164 EB76 text4 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":166 EB82 text4 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":168 EB8E text4 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":169 EB94 text4 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":170 EB9A text4 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":171 EBA0 text4 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":173 EBA4 text4 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\wmul.c":14 EBA8 text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\wmul.c":15 EBB4 text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\wmul.c":16 EBC6 text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\wmul.c":30 EBD8 text46 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strlen.c":8 EBE2 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strlen.c":9 EBEA text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strlen.c":10 EBEC text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strlen.c":9 EBF0 text18 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strlen.c":12 EBFE text18 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":28 EC1C text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":29 EC22 text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":31 EC28 text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":33 EC2E text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":37 EC32 text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":40 EC36 text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":42 EC3C text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":46 EC40 text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":49 EC44 text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":50 EC4C text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\usbSerial.c":51 EC54 text8 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":89 EC56 text42 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":91 EC5E text42 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":94 EC60 text42 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":99 EC6C text42 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":91 EC72 text42 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":108 EC8C text42 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\fpga.c":110 EC90 text42 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":51 EC92 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":52 EC9A text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":53 ECA0 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":54 ECA4 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":55 ECA8 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":56 ECAA text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":57 ECAC text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":58 ECAE text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":59 ECB6 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":60 ECB8 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":61 ECBC text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":62 ECC0 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":63 ECC2 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":64 ECC6 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":65 ECD0 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\pic18\plib\EEP\write_B.c":66 ECD2 text15 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strcmp.c":37 ECD4 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strcmp.c":38 ECD6 text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strcmp.c":39 ECDA text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strcmp.c":37 ECDE text21 CODE
+"C:\Program Files (x86)\Microchip\xc8\v1.21\sources\common\strcmp.c":41 ED0E text21 CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4900 ED1A cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4901 ED1E cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4903 ED22 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4904 ED24 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4905 ED26 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4906 ED28 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4907 ED2A cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4908 ED2C cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4911 ED2E cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4912 ED32 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4914 ED36 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4915 ED38 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4916 ED3A cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4917 ED3C cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4918 ED3E cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4919 ED40 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4922 ED42 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4923 ED46 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4925 ED48 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4926 ED4A cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4927 ED4C cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4930 ED4E cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4931 ED50 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4932 ED52 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4933 ED54 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4934 ED56 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4935 ED58 cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4943 ED5A cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4944 ED5C cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4945 ED5E cinit CODE
+"C:\Users\Spork\AppData\Local\Temp\s1p4.":4946 ED60 cinit CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":248 ED64 text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":249 ED68 text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":250 ED74 text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":251 ED7C text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":252 ED9A text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":254 EDA2 text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":256 EDAA text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":257 EDAE text2 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":203 EDB0 text1 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":204 EDC0 text1 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":205 EDC4 text1 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":206 EDEA text1 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":207 EDEE text1 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":208 EDFE text1 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":209 EE02 text1 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":56 EE04 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":57 EE0C text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":58 EE14 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":59 EE1C text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":60 EE24 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":64 EE2C text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":65 EE2E text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":66 EE32 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":67 EE36 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":68 EE3A text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":72 EE3E text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":73 EE42 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":74 EE46 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":75 EE4A text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":76 EE4E text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":88 EE52 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":89 EE56 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":114 EE5A text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":115 EE5E text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":117 EE62 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":118 EE66 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":119 EE6A text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":120 EE6E text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\init.c":121 EE72 text36 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":228 EE74 text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":229 EE78 text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":230 EE84 text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":231 EE8C text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":232 EEAA text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":235 EEB2 text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":237 EEC6 text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":235 EEDE text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":241 EEE4 text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":243 EEEA text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":244 EEEE text12 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":207 EEF0 text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":208 EEF4 text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":209 EF00 text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":210 EF08 text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":211 EF26 text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":213 EF2E text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":216 EF3A text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":218 EF4E text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":216 EF64 text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":221 EF6A text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\spiMemory.c":222 EF6E text49 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":215 EF70 text25 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":216 EF86 text25 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":217 EF9C text25 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":218 EFBC text25 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":219 EFD2 text25 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\programInfo.c":221 EFF2 text25 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":98 F000 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":100 F00C text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":102 F010 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":104 F024 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":105 F048 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":107 F05C text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":108 F074 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":109 F080 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":105 F090 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":114 F096 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":102 F0A6 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":120 F0AC text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":121 F0B0 text37 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":18 F0B2 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":20 F0B6 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":22 F0BA text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":24 F0C2 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":26 F0CA text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":29 F0CE text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":31 F0D2 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":33 F0DC text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":31 F0F0 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":35 F100 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":37 F10C text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":38 F11C text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":39 F124 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":40 F12C text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":42 F130 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":44 F138 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":46 F140 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":51 F148 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":53 F154 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":54 F164 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\serialTerminal.c":59 F168 text22 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":33 F16C text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":41 F178 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":44 F17E text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":47 F184 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":50 F18A text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":53 F190 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":56 F196 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":59 F19C text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":60 F1A4 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":38 F1A6 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":65 F1E4 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":66 F21A text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":68 F22A text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":69 F236 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":70 F242 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":71 F24E text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":73 F25A text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":75 F262 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":77 F27A text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":78 F282 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":79 F286 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":81 F296 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":83 F29E text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":84 F2C2 text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":85 F2CE text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":87 F2EA text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":75 F2FA text45 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":39 F300 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":41 F310 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":43 F316 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":46 F320 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":48 F330 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":51 F33A text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":52 F360 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":53 F3B0 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":55 F3D6 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":57 F3DA text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":59 F3F0 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":62 F3FA text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":64 F404 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":62 F456 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":67 F462 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":69 F468 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":71 F46E text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":76 F478 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":79 F482 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":80 F48A text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":82 F494 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":80 F4CC text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":85 F4F6 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":87 F4F8 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":89 F53A text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\intelHex.c":92 F544 text17 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":126 F54E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":132 F556 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":133 F55A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":135 F55E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":136 F562 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":137 F566 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":139 F572 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":140 F576 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":142 F57A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":144 F586 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":146 F590 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":149 F5A4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":150 F5AA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":154 F5B0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":155 F5BC text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":157 F5C2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":159 F5CA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":160 F5D2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":163 F5D6 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":165 F5E0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":167 F5E6 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":169 F5EC text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":171 F608 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":172 F610 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":173 F61C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":176 F61E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":178 F62E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":180 F632 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":182 F63C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":180 F670 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":184 F686 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":185 F692 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":188 F694 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":189 F6A0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":190 F6AA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":194 F6B8 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":196 F6D4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":197 F6E0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":198 F6E2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":200 F6FE text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":201 F70A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":202 F70C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":204 F728 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":205 F72C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":206 F738 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":207 F73A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":208 F73C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":210 F758 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":211 F760 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":212 F76C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":213 F76E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":215 F78A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":216 F796 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":217 F79E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":219 F7A0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":217 F7AE text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":221 F7B4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":222 F7C0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":223 F7DE text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":224 F7F4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":225 F812 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":226 F828 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":227 F82C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":228 F83C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":229 F840 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":230 F84C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":231 F84E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":233 F86A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":234 F876 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":235 F87E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":237 F880 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":235 F88E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":239 F894 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":240 F8A0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":241 F8BE text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":242 F8D4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":243 F8F2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":244 F908 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":245 F918 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":247 F92C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":245 F944 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":249 F94A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":250 F956 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":251 F958 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":253 F974 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":254 F978 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":255 F97C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":256 F980 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":257 F98C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":258 F98E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":260 F9AA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":261 F9BE text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":262 F9CA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":263 F9CC text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":265 F9E8 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":266 F9F4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":267 FA00 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":268 FA02 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":270 FA1E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":271 FA2A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":272 FA36 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":273 FA38 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":275 FA54 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":276 FA60 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":277 FA68 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":278 FA74 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":279 FA76 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":281 FA92 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":282 FA9E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":283 FAAA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":284 FAAC text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":286 FAC8 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":287 FAD2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":288 FADE text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":289 FAE0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":291 FAFC text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":292 FB06 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":293 FB12 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":294 FB14 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":296 FB30 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":297 FB34 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":298 FB40 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":299 FB42 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":301 FB5E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":302 FB62 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":303 FB6E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":304 FB70 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":306 FB8C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":307 FB98 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":308 FBA0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":310 FBA2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":308 FBB0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":312 FBB6 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":313 FBC2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":314 FBE0 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":315 FBF6 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":316 FC14 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":317 FC2A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":318 FC48 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":319 FC4C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":320 FC5C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":321 FC60 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":322 FC6C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":323 FC6E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":325 FC8A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":326 FC8E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":327 FC9A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":328 FCA6 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":329 FCA8 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":331 FCC4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":332 FCD4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":333 FCDC text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":334 FCFA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":335 FD02 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":336 FD0E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":337 FD10 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":339 FD2C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":340 FD38 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":341 FD40 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":343 FD42 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":341 FD50 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":345 FD56 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":346 FD62 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":347 FD80 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":348 FD96 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":349 FDB4 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":350 FDCA text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":351 FDE8 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":352 FDF8 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":353 FE04 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":354 FE08 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":356 FE24 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":357 FE30 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":358 FE38 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":360 FE3A text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":358 FE48 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":362 FE4E text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":363 FE60 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":364 FE6C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":365 FE70 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":367 FE8C text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":368 FE98 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":369 FEA2 text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":370 FEAE text0 CODE
+"C:\Users\Spork\Desktop\forWebsite\Microcontroller\UniversalPPU.X\main.c":373 FEB2 text0 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_SPIMemory_SetHold 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_USB_SendChar E840 0 CODE 0 text23 dist/default/production\UniversalPPU.X.production.obj
+_WriteAutoloadProgram EAA0 0 CODE 0 text13 dist/default/production\UniversalPPU.X.production.obj
+__S0 30000E 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__S1 301 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_USB_SendChar 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_FPGA_SetProgramB E7E6 0 CODE 0 text40 dist/default/production\UniversalPPU.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/default/production\UniversalPPU.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/default/production\UniversalPPU.X.production.obj
+__CFG_PLLCFG$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_USB_FlushBuffer E840 0 CODE 0 text16 dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGARegs_Init E836 0 CODE 0 text27 dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGARegs_ReadData EA72 0 CODE 0 text24 dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_ReadId EB72 0 CODE 0 text4 dist/default/production\UniversalPPU.X.production.obj
+main@spiAddr 23 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_PIR1 F9E 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_PIR3 FA4 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_LATA F89 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_LATB F8A 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_LATC F8B 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_LATD F8C 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_LATE F8D 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+USB_SendHex@theChar 7 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_Write_b_eep 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+SerialTerm_GetLine@inputTmp 8 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_WriteAutoChangePalette 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+FPGA_DoWrite@tmp 2 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+main@getWriteData 1E 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_main F54E 0 CODE 0 text0 dist/default/production\UniversalPPU.X.production.obj
+_FPGA_ReadInitB E818 0 CODE 0 text41 dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_EndConfig 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+start 0 0 CODE 0 init C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+_SPIMemory_Init E8B8 0 CODE 0 text32 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_ReadId@memCap 5 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_SerialTerm_GetLine F16C 0 CODE 0 text22 dist/default/production\UniversalPPU.X.production.obj
+__size_of_USB_FlushBuffer 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_SectorErase@startAddr 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+LoadFPGA@endAddr C 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_PeripheralInit EE04 0 CODE 0 text36 dist/default/production\UniversalPPU.X.production.obj
+HexToByte@upperNibble 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_TRISA F92 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+strlen@cp 5 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_TRISB F93 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_TRISC F94 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_PORTA F80 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_TRISD F95 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/default/production\UniversalPPU.X.production.obj
+_TRISE F96 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/default/production\UniversalPPU.X.production.obj
+_PORTC F82 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__HRAM 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_EEADR FA9 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_PORTD F83 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__LRAM 1 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_Read_b_eep 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_ParseIntelHex F54E 0 CODE 0 text17 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_ReadData@startAddr 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+Write_b_eep@bdat 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/default/production\UniversalPPU.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/default/production\UniversalPPU.X.production.obj
+_Write_b_eep EC92 0 CODE 0 text15 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_DoRead@tmp 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_WriteAutoloadFPGA EAD4 0 CODE 0 text6 dist/default/production\UniversalPPU.X.production.obj
+__CFG_FOSC$INTIO67 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_WriteDisable E9AE 0 CODE 0 text3 dist/default/production\UniversalPPU.X.production.obj
+_FPGA_DoWrite E8A0 0 CODE 0 text43 dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_SetCS E806 0 CODE 0 text33 dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGARegs_WriteAddress 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+main@n 20 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/default/production\UniversalPPU.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/default/production\UniversalPPU.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/default/production\UniversalPPU.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/default/production\UniversalPPU.X.production.obj
+_FPGA_EndConfig EC56 0 CODE 0 text42 dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGA_UnsetProgramB E7F6 0 CODE 0 text39 dist/default/production\UniversalPPU.X.production.obj
+__Hram 0 0 ABS 0 ram dist/default/production\UniversalPPU.X.production.obj
+__Lram 0 0 ABS 0 ram dist/default/production\UniversalPPU.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/default/production\UniversalPPU.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/default/production\UniversalPPU.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/default/production\UniversalPPU.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/default/production\UniversalPPU.X.production.obj
+__end_of__stringdata FFFE 0 MEDIUMCONST 0 mediumconst dist/default/production\UniversalPPU.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/default/production\UniversalPPU.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/default/production\UniversalPPU.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\UniversalPPU.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\UniversalPPU.X.production.obj
+_Busy_eep E7E0 0 CODE 0 text14 dist/default/production\UniversalPPU.X.production.obj
+_FPGA_ReadDone E80E 0 CODE 0 text44 dist/default/production\UniversalPPU.X.production.obj
+__size_of_USB_SendString 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_DoWrite 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_WriteAutoloadFPGA 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_RCREG1 FAE 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_RCSTA1 FAB 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_PageProgram EEF0 0 CODE 0 text12 dist/default/production\UniversalPPU.X.production.obj
+_TXREG1 FAD 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPBRG1 FAF 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_TXSTA1 FAC 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_LoadPalette F16C 0 CODE 0 text45 dist/default/production\UniversalPPU.X.production.obj
+_EECON2 FA7 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_WriteAutoloadProgram 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_WaitWIP 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\UniversalPPU.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\UniversalPPU.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\UniversalPPU.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\UniversalPPU.X.production.obj
+_USB_SendHex EC1C 0 CODE 0 text8 dist/default/production\UniversalPPU.X.production.obj
+_ANSELA F38 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_EEDATA FA8 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_ANSELB F39 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_ANSELC F3A 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_FPGA_BeginConfig E936 0 CODE 0 text38 dist/default/production\UniversalPPU.X.production.obj
+_ANSELD F3B 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\UniversalPPU.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\UniversalPPU.X.production.obj
+_ANSELE F3C 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/default/production\UniversalPPU.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/default/production\UniversalPPU.X.production.obj
+__Hramtop 1000 0 RAM 0 ramtop dist/default/production\UniversalPPU.X.production.obj
+__Lramtop 1000 0 RAM 0 ramtop dist/default/production\UniversalPPU.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\UniversalPPU.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\UniversalPPU.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\UniversalPPU.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\UniversalPPU.X.production.obj
+__Hmediumconst 10000 0 MEDIUMCONST 0 mediumconst dist/default/production\UniversalPPU.X.production.obj
+__end_of_strlen EC1C 0 CODE 0 text18 dist/default/production\UniversalPPU.X.production.obj
+__Lmediumconst FEC2 0 MEDIUMCONST 0 mediumconst dist/default/production\UniversalPPU.X.production.obj
+_EEADRH FAA 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_SerialTerm_GetLine 2 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\UniversalPPU.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\UniversalPPU.X.production.obj
+__pmediumconst FEC2 0 MEDIUMCONST 0 mediumconst dist/default/production\UniversalPPU.X.production.obj
+__Hintcode 0 0 CODE 0 intcode dist/default/production\UniversalPPU.X.production.obj
+__Lintcode 0 0 CODE 0 intcode dist/default/production\UniversalPPU.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\UniversalPPU.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_Init 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_TABLAT FF5 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/default/production\UniversalPPU.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/default/production\UniversalPPU.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGARegs_WriteData E9F2 0 CODE 0 text47 dist/default/production\UniversalPPU.X.production.obj
+WriteAutoloadProgram@oldVal 7 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_SectorErase ED64 0 CODE 0 text2 dist/default/production\UniversalPPU.X.production.obj
+__size_of_LoadFPGA 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGA_EndConfig EC92 0 CODE 0 text42 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_WriteStatus@stat 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+main@oldJumpers 1C 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_Busy_eep E7E6 0 CODE 0 text14 dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_ReadData 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\UniversalPPU.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\UniversalPPU.X.production.obj
+FPGA_EndConfig@retryCount 4 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_Write_b_eep 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_Delay10KTCYx E872 0 CODE 0 text53 dist/default/production\UniversalPPU.X.production.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_ReadStatus EB72 0 CODE 0 text10 dist/default/production\UniversalPPU.X.production.obj
+_USB_FlushBuffer E836 0 CODE 0 text16 dist/default/production\UniversalPPU.X.production.obj
+__CFG_CCP2MX$PORTB3 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_FPGA_DoWrite 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+WriteAutoloadProgram@newVal 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_EBTR2$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+main@newJumpers 1F 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+ParseIntelHex@checksum E 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_CCP3MX$PORTE0 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_BORV$220 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_HexToByte EA72 0 CODE 0 text19 dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_SectorErase 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+Write_b_eep@GIE_BIT_VAL 5 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_SerialTerm_Init E82C 0 CODE 0 text35 dist/default/production\UniversalPPU.X.production.obj
+__Hdata 0 0 ABS 0 data dist/default/production\UniversalPPU.X.production.obj
+__Ldata 0 0 ABS 0 data dist/default/production\UniversalPPU.X.production.obj
+__CFG_EBTR3$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_inputBuffer 200 0 BIGRAM 1 bssBIGRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_Init 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_strlen EBE2 0 CODE 0 text18 dist/default/production\UniversalPPU.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/default/production\UniversalPPU.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/default/production\UniversalPPU.X.production.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\UniversalPPU.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\UniversalPPU.X.production.obj
+_strcmp ECD4 0 CODE 0 text21 dist/default/production\UniversalPPU.X.production.obj
+__Hinit 0 0 CODE 0 init dist/default/production\UniversalPPU.X.production.obj
+__Linit 0 0 CODE 0 init dist/default/production\UniversalPPU.X.production.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/default/production\UniversalPPU.X.production.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/default/production\UniversalPPU.X.production.obj
+___wmul EBA8 0 CODE 0 text46 dist/default/production\UniversalPPU.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\UniversalPPU.X.production.obj
+__end_of_main FEC2 0 CODE 0 text0 dist/default/production\UniversalPPU.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\UniversalPPU.X.production.obj
+__Htext 0 0 ABS 0 text dist/default/production\UniversalPPU.X.production.obj
+__Ltext 0 0 ABS 0 text dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_BulkErase E972 0 CODE 0 text7 dist/default/production\UniversalPPU.X.production.obj
+__end_of_GetAutoChangePalette E902 0 CODE 0 text50 dist/default/production\UniversalPPU.X.production.obj
+_WriteFpgaImageSize EDB0 0 CODE 0 text1 dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_UnsetCS 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+___wmul@multiplier 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_Read_b_eep E8A0 0 CODE 0 text51 dist/default/production\UniversalPPU.X.production.obj
+_FPGA_Init E85E 0 CODE 0 text52 dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGA_Init E872 0 CODE 0 text52 dist/default/production\UniversalPPU.X.production.obj
+end_of_initialization ED5A 0 CODE 0 cinit dist/default/production\UniversalPPU.X.production.obj
+Delay10KTCYx@unit 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_SPBRGH1 FB0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_FPGARegs_WriteData 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+?_LoadPalette B 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+___wmul@multiplicand 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+ParseIntelHex@n 10 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+LoadPalette@spiAddr 15 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGA_DoWrite E8B8 0 CODE 0 text43 dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGA_ReadDone E818 0 CODE 0 text44 dist/default/production\UniversalPPU.X.production.obj
+__end_of_GetAutoloadFPGA E91C 0 CODE 0 text26 dist/default/production\UniversalPPU.X.production.obj
+main@inLength 22 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+?_SPIMemory_DoWrite 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGARegs_Init 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_SPIMemory_WriteStatus 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGARegs_ReadData 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+LoadPalette@i 14 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+?_USB_SendHex 7 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_ReadId@memType 4 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_Delay10KTCYx 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SerialTerm_GetLine F0B2 0 CODE 0 text22 dist/default/production\UniversalPPU.X.production.obj
+LoadFPGA@currAddr 12 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+?_GetFpgaImageSize 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_SSP1BUF FC9 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SSP2BUF F6F 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\UniversalPPU.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\UniversalPPU.X.production.obj
+__size_of_strlen 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_OSCTUNE F9B 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\UniversalPPU.X.production.obj
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_HexToByte 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_WriteAutoloadFPGA 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__pbssBIGRAM 200 0 BIGRAM 1 bssBIGRAM dist/default/production\UniversalPPU.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\UniversalPPU.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\UniversalPPU.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\UniversalPPU.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\UniversalPPU.X.production.obj
+__size_of_LoadPalette 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\UniversalPPU.X.production.obj
+?_WriteFpgaImageSize 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\UniversalPPU.X.production.obj
+_TBLPTRH FF7 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_DoWrite E8D0 0 CODE 0 text30 dist/default/production\UniversalPPU.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\UniversalPPU.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\UniversalPPU.X.production.obj
+__end_of_WriteAutoloadProgram EAD4 0 CODE 0 text13 dist/default/production\UniversalPPU.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\UniversalPPU.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\UniversalPPU.X.production.obj
+USB_SendHex@lowerNibble 9 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\UniversalPPU.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGARegs_WriteAddress E9D0 0 CODE 0 text48 dist/default/production\UniversalPPU.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\UniversalPPU.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\UniversalPPU.X.production.obj
+_TBLPTRL FF6 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup dist/default/production\UniversalPPU.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_WaitWIP E84E 0 CODE 0 text9 dist/default/production\UniversalPPU.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\UniversalPPU.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\UniversalPPU.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\UniversalPPU.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\UniversalPPU.X.production.obj
+__Hbank8 0 0 ABS 0 bank8 dist/default/production\UniversalPPU.X.production.obj
+__Lbank8 0 0 ABS 0 bank8 dist/default/production\UniversalPPU.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/default/production\UniversalPPU.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/default/production\UniversalPPU.X.production.obj
+__Hbank9 0 0 ABS 0 bank9 dist/default/production\UniversalPPU.X.production.obj
+__Lbank9 0 0 ABS 0 bank9 dist/default/production\UniversalPPU.X.production.obj
+_FPGARegs_Init E82C 0 CODE 0 text27 dist/default/production\UniversalPPU.X.production.obj
+__Htext1 0 0 ABS 0 text1 dist/default/production\UniversalPPU.X.production.obj
+_GetAutoChangePalette E8E8 0 CODE 0 text50 dist/default/production\UniversalPPU.X.production.obj
+__Ltext1 0 0 ABS 0 text1 dist/default/production\UniversalPPU.X.production.obj
+__ptext0 F54E 0 CODE 0 text0 dist/default/production\UniversalPPU.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/default/production\UniversalPPU.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/default/production\UniversalPPU.X.production.obj
+__ptext1 EDB0 0 CODE 0 text1 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_ReadStatus@stat B 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/default/production\UniversalPPU.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/default/production\UniversalPPU.X.production.obj
+__ptext2 ED64 0 CODE 0 text2 dist/default/production\UniversalPPU.X.production.obj
+__end_of_HexToByte EAA0 0 CODE 0 text19 dist/default/production\UniversalPPU.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/default/production\UniversalPPU.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/default/production\UniversalPPU.X.production.obj
+__ptext3 E990 0 CODE 0 text3 dist/default/production\UniversalPPU.X.production.obj
+__CFG_P2BMX$PORTC0 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/default/production\UniversalPPU.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/default/production\UniversalPPU.X.production.obj
+__ptext4 EB72 0 CODE 0 text4 dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_WaitWIP E85E 0 CODE 0 text9 dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGA_ReadInitB E822 0 CODE 0 text41 dist/default/production\UniversalPPU.X.production.obj
+WriteAutoloadFPGA@oldVal 7 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_LoadFPGA F0B2 0 CODE 0 text37 dist/default/production\UniversalPPU.X.production.obj
+_TBLPTRU FF8 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/default/production\UniversalPPU.X.production.obj
+_FPGARegs_WriteData E9D0 0 CODE 0 text47 dist/default/production\UniversalPPU.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/default/production\UniversalPPU.X.production.obj
+__ptext5 EB08 0 CODE 0 text5 dist/default/production\UniversalPPU.X.production.obj
+__end_of_Write_b_eep ECD4 0 CODE 0 text15 dist/default/production\UniversalPPU.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/default/production\UniversalPPU.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/default/production\UniversalPPU.X.production.obj
+__ptext6 EAD4 0 CODE 0 text6 dist/default/production\UniversalPPU.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\UniversalPPU.X.production.obj
+WriteAutoloadFPGA@newVal 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\UniversalPPU.X.production.obj
+SerialTerm_GetLine@n 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/default/production\UniversalPPU.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/default/production\UniversalPPU.X.production.obj
+__ptext7 E972 0 CODE 0 text7 dist/default/production\UniversalPPU.X.production.obj
+__pbssCOMRAM 26 0 COMRAM 1 bssCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/default/production\UniversalPPU.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/default/production\UniversalPPU.X.production.obj
+__ptext8 EC1C 0 CODE 0 text8 dist/default/production\UniversalPPU.X.production.obj
+__CFG_T3CMX$PORTB5 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__ptext9 E84E 0 CODE 0 text9 dist/default/production\UniversalPPU.X.production.obj
+ParseIntelHex@lineLength F 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\UniversalPPU.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\UniversalPPU.X.production.obj
+__size_of_Busy_eep 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+HexToByte@lowerNibble 2 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_IntelHex_Data 60 0 BANK0 1 bssBANK0 dist/default/production\UniversalPPU.X.production.obj
+?_Delay10KTCYx 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_FPGA_SetProgramB E7EE 0 CODE 0 text40 dist/default/production\UniversalPPU.X.production.obj
+__end_of_strcmp ED1A 0 CODE 0 text21 dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_SectorErase EDB0 0 CODE 0 text2 dist/default/production\UniversalPPU.X.production.obj
+__end_of__initialization ED5A 0 CODE 0 cinit dist/default/production\UniversalPPU.X.production.obj
+__CFG_PRICLKEN$ON 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_BulkErase 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_WriteAutoChangePalette 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+?_USB_SendString 2 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_USB_SendHex EC56 0 CODE 0 text8 dist/default/production\UniversalPPU.X.production.obj
+__end_of_LoadPalette F300 0 CODE 0 text45 dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_UnsetCS E80E 0 CODE 0 text31 dist/default/production\UniversalPPU.X.production.obj
+_FPGARegs_WriteAddress E9AE 0 CODE 0 text48 dist/default/production\UniversalPPU.X.production.obj
+?_LoadFPGA C 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+WriteFpgaImageSize@val 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_WriteDisable 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_HexToByte 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_WriteAutoChangePalette EB3C 0 CODE 0 text5 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_DoWrite@d 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+SerialTerm_GetLine@retVal 4 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_SetCS 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_IntelHex_StartAddr 26 0 COMRAM 1 bssCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_USB_SendChar E84E 0 CODE 0 text23 dist/default/production\UniversalPPU.X.production.obj
+strcmp@r 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+strlen@s 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+SerialTerm_GetLine@noEcho 2 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/default/production\UniversalPPU.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/default/production\UniversalPPU.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\UniversalPPU.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\UniversalPPU.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/default/production\UniversalPPU.X.production.obj
+_Read_b_eep E888 0 CODE 0 text51 dist/default/production\UniversalPPU.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/default/production\UniversalPPU.X.production.obj
+__CFG_PWRTEN$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/default/production\UniversalPPU.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/default/production\UniversalPPU.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_IESO$ON 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_GetFpgaImageSize F000 0 CODE 0 text25 dist/default/production\UniversalPPU.X.production.obj
+GetFpgaImageSize@retVal 9 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_DoRead E91C 0 CODE 0 text11 dist/default/production\UniversalPPU.X.production.obj
+_IntelHex_ByteCount 2A 0 COMRAM 1 bssCOMRAM dist/default/production\UniversalPPU.X.production.obj
+?_strlen 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_DoWrite@tmp 2 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\UniversalPPU.X.production.obj
+__Lsmallconst 0 0 SMALLCONST 0 smallconst dist/default/production\UniversalPPU.X.production.obj
+?_strcmp 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\UniversalPPU.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\UniversalPPU.X.production.obj
+?___wmul 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/default/production\UniversalPPU.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/default/production\UniversalPPU.X.production.obj
+__pcinit ED1A 0 CODE 0 cinit dist/default/production\UniversalPPU.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__ramtop 1000 0 RAM 0 ramtop C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+__mediumconst FEC2 0 MEDIUMCONST 0 mediumconst C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+?_FPGARegs_WriteAddress 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_main 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_SerialTerm_GetLine 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_PageProgram 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hconst 0 0 CODE 0 const dist/default/production\UniversalPPU.X.production.obj
+__Lconst 0 0 CODE 0 const dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_BulkErase E990 0 CODE 0 text7 dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_ReadData EEF0 0 CODE 0 text49 dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_ReadId 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+Write_b_eep@badd 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+HexToByte@returnVal 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+main@retCode 1D 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_GetFpgaImageSize EF70 0 CODE 0 text25 dist/default/production\UniversalPPU.X.production.obj
+_dataBuffer 100 0 BANK1 1 bssBANK1 dist/default/production\UniversalPPU.X.production.obj
+__CFG_DEBUG$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_WriteEnable E954 0 CODE 0 text29 dist/default/production\UniversalPPU.X.production.obj
+__size_of_USB_SendHex 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_SPIMemory_ReadData 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_WriteStatus E9F2 0 CODE 0 text28 dist/default/production\UniversalPPU.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\UniversalPPU.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\UniversalPPU.X.production.obj
+_SSP1CON1 FC6 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_ReadId EBA8 0 CODE 0 text4 dist/default/production\UniversalPPU.X.production.obj
+_SSP2CON1 F6C 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_MCLRE$EXTMCLR 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_WRT2$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hbank10 0 0 ABS 0 bank10 dist/default/production\UniversalPPU.X.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/default/production\UniversalPPU.X.production.obj
+_GetAutoloadFPGA E902 0 CODE 0 text26 dist/default/production\UniversalPPU.X.production.obj
+__Lbank10 0 0 ABS 0 bank10 dist/default/production\UniversalPPU.X.production.obj
+_BAUDCON1 FB8 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hbank11 0 0 ABS 0 bank11 dist/default/production\UniversalPPU.X.production.obj
+__Lbank11 0 0 ABS 0 bank11 dist/default/production\UniversalPPU.X.production.obj
+__CFG_WRT3$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_BeginConfig 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hbank12 0 0 ABS 0 bank12 dist/default/production\UniversalPPU.X.production.obj
+__Lbank12 0 0 ABS 0 bank12 dist/default/production\UniversalPPU.X.production.obj
+__size_of_GetFpgaImageSize 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hbank13 0 0 ABS 0 bank13 dist/default/production\UniversalPPU.X.production.obj
+__Lbank13 0 0 ABS 0 bank13 dist/default/production\UniversalPPU.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\UniversalPPU.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/default/production\UniversalPPU.X.production.obj
+?_SPIMemory_SectorErase 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hbank14 0 0 ABS 0 bank14 dist/default/production\UniversalPPU.X.production.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/default/production\UniversalPPU.X.production.obj
+__Lbank14 0 0 ABS 0 bank14 dist/default/production\UniversalPPU.X.production.obj
+__end_of_WriteAutoloadFPGA EB08 0 CODE 0 text6 dist/default/production\UniversalPPU.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/default/production\UniversalPPU.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/default/production\UniversalPPU.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/default/production\UniversalPPU.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/default/production\UniversalPPU.X.production.obj
+__ptext10 EB3C 0 CODE 0 text10 dist/default/production\UniversalPPU.X.production.obj
+__Hbank15 0 0 ABS 0 bank15 dist/default/production\UniversalPPU.X.production.obj
+__Lbank15 0 0 ABS 0 bank15 dist/default/production\UniversalPPU.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/default/production\UniversalPPU.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/default/production\UniversalPPU.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/default/production\UniversalPPU.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/default/production\UniversalPPU.X.production.obj
+__ptext20 EA18 0 CODE 0 text20 dist/default/production\UniversalPPU.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/default/production\UniversalPPU.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/default/production\UniversalPPU.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/default/production\UniversalPPU.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/default/production\UniversalPPU.X.production.obj
+__ptext11 E91C 0 CODE 0 text11 dist/default/production\UniversalPPU.X.production.obj
+__ptext30 E8D0 0 CODE 0 text30 dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGARegs_WriteData 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Htext50 0 0 ABS 0 text50 dist/default/production\UniversalPPU.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/default/production\UniversalPPU.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/default/production\UniversalPPU.X.production.obj
+__Ltext50 0 0 ABS 0 text50 dist/default/production\UniversalPPU.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/default/production\UniversalPPU.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/default/production\UniversalPPU.X.production.obj
+__ptext21 ECD4 0 CODE 0 text21 dist/default/production\UniversalPPU.X.production.obj
+__ptext40 E7E6 0 CODE 0 text40 dist/default/production\UniversalPPU.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/default/production\UniversalPPU.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/default/production\UniversalPPU.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/default/production\UniversalPPU.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/default/production\UniversalPPU.X.production.obj
+__ptext12 EE74 0 CODE 0 text12 dist/default/production\UniversalPPU.X.production.obj
+__ptext31 E806 0 CODE 0 text31 dist/default/production\UniversalPPU.X.production.obj
+__ptext50 E8E8 0 CODE 0 text50 dist/default/production\UniversalPPU.X.production.obj
+LoadPalette@m 12 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Htext51 0 0 ABS 0 text51 dist/default/production\UniversalPPU.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/default/production\UniversalPPU.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/default/production\UniversalPPU.X.production.obj
+__Ltext51 0 0 ABS 0 text51 dist/default/production\UniversalPPU.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/default/production\UniversalPPU.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/default/production\UniversalPPU.X.production.obj
+__ptext22 F0B2 0 CODE 0 text22 dist/default/production\UniversalPPU.X.production.obj
+__ptext41 E818 0 CODE 0 text41 dist/default/production\UniversalPPU.X.production.obj
+__end_of_Delay10KTCYx E888 0 CODE 0 text53 dist/default/production\UniversalPPU.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/default/production\UniversalPPU.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/default/production\UniversalPPU.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/default/production\UniversalPPU.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/default/production\UniversalPPU.X.production.obj
+__ptext13 EAA0 0 CODE 0 text13 dist/default/production\UniversalPPU.X.production.obj
+__ptext32 E8B8 0 CODE 0 text32 dist/default/production\UniversalPPU.X.production.obj
+__ptext51 E888 0 CODE 0 text51 dist/default/production\UniversalPPU.X.production.obj
+__Htext52 0 0 ABS 0 text52 dist/default/production\UniversalPPU.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/default/production\UniversalPPU.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/default/production\UniversalPPU.X.production.obj
+__Ltext52 0 0 ABS 0 text52 dist/default/production\UniversalPPU.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/default/production\UniversalPPU.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/default/production\UniversalPPU.X.production.obj
+__ptext23 E840 0 CODE 0 text23 dist/default/production\UniversalPPU.X.production.obj
+__ptext42 EC56 0 CODE 0 text42 dist/default/production\UniversalPPU.X.production.obj
+_EECON1bits FA6 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Htext43 0 0 ABS 0 text43 dist/default/production\UniversalPPU.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/default/production\UniversalPPU.X.production.obj
+__Ltext43 0 0 ABS 0 text43 dist/default/production\UniversalPPU.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_ReadData@currCount 9 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__ptext14 E7E0 0 CODE 0 text14 dist/default/production\UniversalPPU.X.production.obj
+__ptext33 E7FE 0 CODE 0 text33 dist/default/production\UniversalPPU.X.production.obj
+__ptext52 E85E 0 CODE 0 text52 dist/default/production\UniversalPPU.X.production.obj
+__Htext53 0 0 ABS 0 text53 dist/default/production\UniversalPPU.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/default/production\UniversalPPU.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/default/production\UniversalPPU.X.production.obj
+__Ltext53 0 0 ABS 0 text53 dist/default/production\UniversalPPU.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/default/production\UniversalPPU.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/default/production\UniversalPPU.X.production.obj
+FPGARegs_WriteData@data 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__ptext24 EA44 0 CODE 0 text24 dist/default/production\UniversalPPU.X.production.obj
+__ptext43 E8A0 0 CODE 0 text43 dist/default/production\UniversalPPU.X.production.obj
+__Htext44 0 0 ABS 0 text44 dist/default/production\UniversalPPU.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/default/production\UniversalPPU.X.production.obj
+__Ltext44 0 0 ABS 0 text44 dist/default/production\UniversalPPU.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/default/production\UniversalPPU.X.production.obj
+__ptext15 EC92 0 CODE 0 text15 dist/default/production\UniversalPPU.X.production.obj
+__ptext34 E7F6 0 CODE 0 text34 dist/default/production\UniversalPPU.X.production.obj
+__ptext53 E872 0 CODE 0 text53 dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_DoRead E936 0 CODE 0 text11 dist/default/production\UniversalPPU.X.production.obj
+__Htext35 0 0 ABS 0 text35 dist/default/production\UniversalPPU.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/default/production\UniversalPPU.X.production.obj
+LoadPalette@jmp B 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/default/production\UniversalPPU.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/default/production\UniversalPPU.X.production.obj
+__ptext25 EF70 0 CODE 0 text25 dist/default/production\UniversalPPU.X.production.obj
+__ptext44 E80E 0 CODE 0 text44 dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_DoRead 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_PeripheralInit 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_USB_SendChar 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Htext45 0 0 ABS 0 text45 dist/default/production\UniversalPPU.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/default/production\UniversalPPU.X.production.obj
+__Ltext45 0 0 ABS 0 text45 dist/default/production\UniversalPPU.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/default/production\UniversalPPU.X.production.obj
+__ptext16 E836 0 CODE 0 text16 dist/default/production\UniversalPPU.X.production.obj
+__ptext35 E822 0 CODE 0 text35 dist/default/production\UniversalPPU.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/default/production\UniversalPPU.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/default/production\UniversalPPU.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/default/production\UniversalPPU.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/default/production\UniversalPPU.X.production.obj
+__ptext26 E902 0 CODE 0 text26 dist/default/production\UniversalPPU.X.production.obj
+__ptext45 F16C 0 CODE 0 text45 dist/default/production\UniversalPPU.X.production.obj
+__Htext46 0 0 ABS 0 text46 dist/default/production\UniversalPPU.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/default/production\UniversalPPU.X.production.obj
+__Ltext46 0 0 ABS 0 text46 dist/default/production\UniversalPPU.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/default/production\UniversalPPU.X.production.obj
+__CFG_BOREN$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__ptext17 F300 0 CODE 0 text17 dist/default/production\UniversalPPU.X.production.obj
+__ptext36 EE04 0 CODE 0 text36 dist/default/production\UniversalPPU.X.production.obj
+_WriteAutoChangePalette EB08 0 CODE 0 text5 dist/default/production\UniversalPPU.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/default/production\UniversalPPU.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_ReadDone 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/default/production\UniversalPPU.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/default/production\UniversalPPU.X.production.obj
+__ptext27 E82C 0 CODE 0 text27 dist/default/production\UniversalPPU.X.production.obj
+__ptext46 EBA8 0 CODE 0 text46 dist/default/production\UniversalPPU.X.production.obj
+__Htext47 0 0 ABS 0 text47 dist/default/production\UniversalPPU.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/default/production\UniversalPPU.X.production.obj
+__Ltext47 0 0 ABS 0 text47 dist/default/production\UniversalPPU.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/default/production\UniversalPPU.X.production.obj
+__ptext18 EBE2 0 CODE 0 text18 dist/default/production\UniversalPPU.X.production.obj
+__ptext37 F000 0 CODE 0 text37 dist/default/production\UniversalPPU.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/default/production\UniversalPPU.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/default/production\UniversalPPU.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/default/production\UniversalPPU.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/default/production\UniversalPPU.X.production.obj
+__ptext28 E9F2 0 CODE 0 text28 dist/default/production\UniversalPPU.X.production.obj
+__ptext47 E9D0 0 CODE 0 text47 dist/default/production\UniversalPPU.X.production.obj
+__CFG_WDTEN$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Htext48 0 0 ABS 0 text48 dist/default/production\UniversalPPU.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/default/production\UniversalPPU.X.production.obj
+__Ltext48 0 0 ABS 0 text48 dist/default/production\UniversalPPU.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/default/production\UniversalPPU.X.production.obj
+__ptext19 EA72 0 CODE 0 text19 dist/default/production\UniversalPPU.X.production.obj
+__ptext38 E936 0 CODE 0 text38 dist/default/production\UniversalPPU.X.production.obj
+__Htext39 0 0 ABS 0 text39 dist/default/production\UniversalPPU.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/default/production\UniversalPPU.X.production.obj
+__ptext29 E954 0 CODE 0 text29 dist/default/production\UniversalPPU.X.production.obj
+__ptext48 E9AE 0 CODE 0 text48 dist/default/production\UniversalPPU.X.production.obj
+__Htext49 0 0 ABS 0 text49 dist/default/production\UniversalPPU.X.production.obj
+__Ltext49 0 0 ABS 0 text49 dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_WriteEnable E972 0 CODE 0 text29 dist/default/production\UniversalPPU.X.production.obj
+_USB_SendString EA18 0 CODE 0 text20 dist/default/production\UniversalPPU.X.production.obj
+__ptext39 E7EE 0 CODE 0 text39 dist/default/production\UniversalPPU.X.production.obj
+__end_of_USB_SendString EA44 0 CODE 0 text20 dist/default/production\UniversalPPU.X.production.obj
+WriteAutoChangePalette@oldVal 7 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__ptext49 EEF0 0 CODE 0 text49 dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_ReadStatus 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+USB_SendChar@theChar 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__Hend_init 4 0 CODE 0 end_init dist/default/production\UniversalPPU.X.production.obj
+__Lend_init 0 0 CODE 0 end_init dist/default/production\UniversalPPU.X.production.obj
+_LoadFPGA F000 0 CODE 0 text37 dist/default/production\UniversalPPU.X.production.obj
+FPGARegs_WriteAddress@addr 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+USB_SendString@theString 2 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+FPGA_DoWrite@d 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_WriteEnable 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_WriteDisable E990 0 CODE 0 text3 dist/default/production\UniversalPPU.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+LoadPalette@n 10 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/default/production\UniversalPPU.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\UniversalPPU.X.production.obj
+__CFG_CP2$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_SPIMemory_PageProgram 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_inputBufferPos 28 0 COMRAM 1 bssCOMRAM dist/default/production\UniversalPPU.X.production.obj
+strcmp@s1 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+Read_b_eep@badd 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_CP3$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+strcmp@s2 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__stringdata FEC2 0 MEDIUMCONST 0 mediumconst dist/default/production\UniversalPPU.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+__end_of_FPGA_BeginConfig E954 0 CODE 0 text38 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_PageProgram@currCount 9 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+_SerialTerm_Init E822 0 CODE 0 text35 dist/default/production\UniversalPPU.X.production.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\UniversalPPU.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\UniversalPPU.X.production.obj
+intlevel0 0 0 CODE 0 text C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+_SSP1STAT FC7 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+intlevel1 0 0 CODE 0 text C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+_SSP2STAT F6D 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+FPGARegs_ReadData@ret 1 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+intlevel2 0 0 CODE 0 text C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+__end_of_PeripheralInit EE74 0 CODE 0 text36 dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_WriteStatus EA18 0 CODE 0 text28 dist/default/production\UniversalPPU.X.production.obj
+intlevel3 0 0 CODE 0 text C:\Users\Spork\AppData\Local\Temp\s1p4.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_WriteAutoloadProgram 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_WRTD$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_SetHold E7FE 0 CODE 0 text34 dist/default/production\UniversalPPU.X.production.obj
+__size_of_ParseIntelHex 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_SetHold E7F6 0 CODE 0 text34 dist/default/production\UniversalPPU.X.production.obj
+__size_of_WriteFpgaImageSize 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_SetCS E7FE 0 CODE 0 text33 dist/default/production\UniversalPPU.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__CFG_HFOFST$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_GetAutoChangePalette 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of___wmul EBE2 0 CODE 0 text46 dist/default/production\UniversalPPU.X.production.obj
+LoadFPGA@m 17 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+ParseIntelHex@line 7 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+start_initialization ED1A 0 CODE 0 cinit dist/default/production\UniversalPPU.X.production.obj
+LoadFPGA@n 15 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+WriteAutoChangePalette@newVal 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_Read_b_eep 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_FPGA_UnsetProgramB E7EE 0 CODE 0 text39 dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_UnsetProgramB 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_ReadInitB 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_FPGARegs_ReadData EA44 0 CODE 0 text24 dist/default/production\UniversalPPU.X.production.obj
+_IntelHex_RecordType 2B 0 COMRAM 1 bssCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_DoWrite E8E8 0 CODE 0 text30 dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_PageProgram EE74 0 CODE 0 text12 dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_ReadId@mfgId 6 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__initialization ED1A 0 CODE 0 cinit dist/default/production\UniversalPPU.X.production.obj
+USB_SendHex@upperNibble 8 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+SPIMemory_PageProgram@startAddr 3 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_Init E8D0 0 CODE 0 text32 dist/default/production\UniversalPPU.X.production.obj
+__size_of_SerialTerm_Init 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_SPIMemory_WriteStatus 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_UnsetCS E806 0 CODE 0 text31 dist/default/production\UniversalPPU.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_SPIMemory_ReadData EF70 0 CODE 0 text49 dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_DoWrite 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+?_ParseIntelHex 7 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+___wmul@product 5 0 COMRAM 1 cstackCOMRAM dist/default/production\UniversalPPU.X.production.obj
+__size_of_GetAutoloadFPGA 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__size_of_strcmp 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+__end_of_WriteFpgaImageSize EE04 0 CODE 0 text1 dist/default/production\UniversalPPU.X.production.obj
+_ParseIntelHex F300 0 CODE 0 text17 dist/default/production\UniversalPPU.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+_SPIMemory_ReadStatus EB3C 0 CODE 0 text10 dist/default/production\UniversalPPU.X.production.obj
+__size_of_FPGA_SetProgramB 0 0 ABS 0 - dist/default/production\UniversalPPU.X.production.obj
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta> <class name>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 4 1 CODE
+mediumconst 0 FEC2 FEC2 13E 1 MEDIUMCONST
+config 0 300000 300000 E 1 CONFIG
+idloc 0 200000 200000 8 1 IDLOC
+cstackCOMRAM 1 1 1 2B 1 COMRAM
+bssBANK0 1 60 60 40 1 BANK0
+bssBANK1 1 100 100 100 1 BANK1
+bssBIGRAM 1 200 200 101 1 BIGRAM
+text0 0 F54E F54E 974 1 CODE
+text17 0 F300 F300 24E 1 CODE
+text45 0 F16C F16C 194 1 CODE
+text22 0 F0B2 F0B2 BA 1 CODE
+text37 0 F000 F000 B2 1 CODE
+text25 0 EF70 EF70 90 1 CODE
+text49 0 EEF0 EEF0 80 1 CODE
+text12 0 EE74 EE74 7C 1 CODE
+text36 0 EE04 EE04 70 1 CODE
+text1 0 EDB0 EDB0 54 1 CODE
+text2 0 ED64 ED64 4C 1 CODE
+cinit 0 ED1A ED1A 4A 1 CODE
+text21 0 ECD4 ECD4 46 1 CODE
+text15 0 EC92 EC92 42 1 CODE
+text42 0 EC56 EC56 3C 1 CODE
+text8 0 EC1C EC1C 3A 1 CODE
+text18 0 EBE2 EBE2 3A 1 CODE
+text46 0 EBA8 EBA8 3A 1 CODE
+text4 0 EB72 EB72 36 1 CODE
+text10 0 EB3C EB3C 36 1 CODE
+text5 0 EB08 EB08 34 1 CODE
+text6 0 EAD4 EAD4 34 1 CODE
+text13 0 EAA0 EAA0 34 1 CODE
+text19 0 EA72 EA72 2E 1 CODE
+text24 0 EA44 EA44 2E 1 CODE
+text20 0 EA18 EA18 2C 1 CODE
+text28 0 E9F2 E9F2 26 1 CODE
+text47 0 E9D0 E9D0 22 1 CODE
+text48 0 E9AE E9AE 22 1 CODE
+text3 0 E990 E990 1E 1 CODE
+text7 0 E972 E972 1E 1 CODE
+text29 0 E954 E954 1E 1 CODE
+text38 0 E936 E936 1E 1 CODE
+text11 0 E91C E91C 1A 1 CODE
+text26 0 E902 E902 1A 1 CODE
+text50 0 E8E8 E8E8 1A 1 CODE
+text30 0 E8D0 E8D0 18 1 CODE
+text32 0 E8B8 E8B8 18 1 CODE
+text43 0 E8A0 E8A0 18 1 CODE
+text51 0 E888 E888 18 1 CODE
+text53 0 E872 E872 16 1 CODE
+text52 0 E85E E85E 14 1 CODE
+text9 0 E84E E84E 10 1 CODE
+text23 0 E840 E840 E 1 CODE
+text16 0 E836 E836 A 1 CODE
+text27 0 E82C E82C A 1 CODE
+text35 0 E822 E822 A 1 CODE
+text41 0 E818 E818 A 1 CODE
+text44 0 E80E E80E A 1 CODE
+text31 0 E806 E806 8 1 CODE
+text33 0 E7FE E7FE 8 1 CODE
+text34 0 E7F6 E7F6 8 1 CODE
+text39 0 E7EE E7EE 8 1 CODE
+text40 0 E7E6 E7E6 8 1 CODE
+text14 0 E7E0 E7E0 6 1 CODE

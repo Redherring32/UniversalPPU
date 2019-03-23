@@ -1,0 +1,102 @@
+Release 14.7 - par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Mon Jun 30 19:13:58 2014
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 90 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   Mram_lineOAM110_RAMD_O
+   Mram_lineOAM111_RAMD_O
+   Mram_lineOAM113_RAMD_O
+   Mram_lineOAM114_RAMD_O
+   Mram_lineOAM131_RAMD_O
+   Mram_lineOAM132_RAMD_O
+   Mram_lineOAM151_RAMD_O
+   Mram_lineOAM152_RAMD_O
+   Mram_lineOAM161_RAMD_O
+   Mram_lineOAM162_RAMD_O
+   Mram_lineOAM171_RAMD_O
+   Mram_lineOAM172_RAMD_O
+   Mram_lineOAM181_RAMC_DPO
+   Mram_lineOAM181_RAMD_O
+   Mram_lineOAM182_RAMA_DPO
+   Mram_lineOAM182_RAMB_DPO
+   Mram_lineOAM182_RAMD_O
+   Mram_lineOAM191_RAMD_O
+   Mram_lineOAM192_RAMD_O
+   Mram_lineOAM201_RAMD_O
+   Mram_lineOAM202_RAMD_O
+   Mram_lineOAM213_RAMC_DPO
+   Mram_lineOAM213_RAMD_O
+   Mram_lineOAM214_RAMA_DPO
+   Mram_lineOAM214_RAMB_DPO
+   Mram_lineOAM214_RAMD_O
+   Mram_lineOAM221_RAMD_O
+   Mram_lineOAM222_RAMD_O
+   Mram_lineOAM231_RAMD_O
+   Mram_lineOAM232_RAMD_O
+   Mram_lineOAM241_RAMC_DPO
+   Mram_lineOAM241_RAMD_O
+   Mram_lineOAM242_RAMA_DPO
+   Mram_lineOAM242_RAMB_DPO
+   Mram_lineOAM242_RAMD_O
+   Mram_lineOAM251_RAMD_O
+   Mram_lineOAM252_RAMD_O
+   Mram_lineOAM261_RAMD_O
+   Mram_lineOAM262_RAMD_O
+   Mram_lineOAM271_RAMC_DPO
+   Mram_lineOAM271_RAMD_O
+   Mram_lineOAM272_RAMA_DPO
+   Mram_lineOAM272_RAMB_DPO
+   Mram_lineOAM272_RAMD_O
+   Mram_lineOAM281_RAMD_O
+   Mram_lineOAM282_RAMD_O
+   Mram_lineOAM291_RAMD_O
+   Mram_lineOAM292_RAMD_O
+   Mram_lineOAM301_RAMC_DPO
+   Mram_lineOAM301_RAMD_O
+   Mram_lineOAM302_RAMA_DPO
+   Mram_lineOAM302_RAMB_DPO
+   Mram_lineOAM302_RAMD_O
+   Mram_lineOAM310_RAMD_O
+   Mram_lineOAM311_RAMD_O
+   Mram_lineOAM313_RAMD_O
+   Mram_lineOAM314_RAMD_O
+   Mram_lineOAM321_RAMD_O
+   Mram_lineOAM322_RAMD_O
+   Mram_lineOAM331_RAMC_DPO
+   Mram_lineOAM331_RAMD_O
+   Mram_lineOAM332_RAMA_DPO
+   Mram_lineOAM332_RAMB_DPO
+   Mram_lineOAM332_RAMD_O
+   Mram_lineOAM341_RAMD_O
+   Mram_lineOAM342_RAMD_O
+   Mram_lineOAM351_RAMD_O
+   Mram_lineOAM352_RAMD_O
+   Mram_lineOAM361_RAMC_DPO
+   Mram_lineOAM361_RAMD_O
+   Mram_lineOAM362_RAMA_DPO
+   Mram_lineOAM362_RAMB_DPO
+   Mram_lineOAM362_RAMD_O
+   Mram_lineOAM371_RAMD_O
+   Mram_lineOAM372_RAMD_O
+   Mram_lineOAM381_RAMD_O
+   Mram_lineOAM382_RAMD_O
+   Mram_lineOAM391_RAMC_DPO
+   Mram_lineOAM391_RAMD_O
+   Mram_lineOAM392_RAMA_DPO
+   Mram_lineOAM392_RAMB_DPO
+   Mram_lineOAM392_RAMD_O
+   Mram_lineOAM401_RAMD_O
+   Mram_lineOAM402_RAMD_O
+   Mram_lineOAM51_RAMD_O
+   Mram_lineOAM52_RAMD_O
+   Mram_lineOAM71_RAMD_O
+   Mram_lineOAM72_RAMD_O
+   Mram_lineOAM91_RAMD_O
+   Mram_lineOAM92_RAMD_O
+
+

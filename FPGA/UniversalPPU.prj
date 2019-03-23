@@ -1,0 +1,6 @@
+verilog work "SyncAsyncReset.v"
+verilog work "SpriteVisible.v"
+verilog work "ipcore_dir/oamRam.v"
+verilog work "ipcore_dir/displayRam.v"
+verilog work "ipcore_dir/colorRam.v"
+verilog work "UniversalPpu.v"

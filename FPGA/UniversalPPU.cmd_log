@@ -1,0 +1,649 @@
+xst -intstyle ise -ifn "C:/Documents and Settings/universalPpu/UniversalPPU.xst" -ofn "C:/Documents and Settings/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Documents and Settings/universalPpu/UniversalPPU.xst" -ofn "C:/Documents and Settings/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+xst -intstyle ise -ifn "C:/Documents and Settings/universalPpu/UniversalPPU.xst" -ofn "C:/Documents and Settings/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Documents/UniversalPPU/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "C:/Users/Spork/Desktop/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/Universal PPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 "UniversalPPU.ngc" UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 
+xst -intstyle ise -ifn "N:/Project/UniversalPPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.xst" -ofn "N:/Project/UniversalPPU/Current/FPGA/Prototype/universalPpu/UniversalPPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc universalppu.ucf -p xc6slx9-tqg144-3 UniversalPPU.ngc UniversalPPU.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UniversalPPU_map.ncd UniversalPPU.ngd UniversalPPU.pcf 
+par -w -intstyle ise -ol high -mt off UniversalPPU_map.ncd UniversalPPU.ncd UniversalPPU.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UniversalPPU.twx UniversalPPU.ncd -o UniversalPPU.twr UniversalPPU.pcf -ucf universalppu.ucf 
+bitgen -intstyle ise -f UniversalPPU.ut UniversalPPU.ncd 

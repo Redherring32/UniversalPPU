@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=N:\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\UniversalPPU.ncd
+OUTFILE=N:\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\UniversalPPU.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=N:\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu
+LICENSE=WebPack
+USER_INFO=210633160_0_0_775

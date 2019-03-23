@@ -1,0 +1,23 @@
+C:\Users\Spork\AppData\Local\Temporary Projects\UniversalPpuConfig\bin\Debug\UniversalPpuConfig.exe
+C:\Users\Spork\AppData\Local\Temporary Projects\UniversalPpuConfig\bin\Debug\UniversalPpuConfig.pdb
+C:\Users\Spork\AppData\Local\Temporary Projects\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.Properties.Resources.resources
+C:\Users\Spork\AppData\Local\Temporary Projects\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.csproj.GenerateResource.Cache
+C:\Users\Spork\AppData\Local\Temporary Projects\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.exe
+C:\Users\Spork\AppData\Local\Temporary Projects\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.pdb
+C:\Users\Spork\AppData\Local\Temporary Projects\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.FormMain.resources
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.exe
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.pdb
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\bin\Debug\UniversalPpuConfig.exe
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\bin\Debug\UniversalPpuConfig.pdb
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.FormMain.resources
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.Properties.Resources.resources
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.csproj.GenerateResource.Cache
+C:\Users\Spork\Documents\Visual Studio 2010\Projects\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.csprojResolveAssemblyReference.cache
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\bin\Debug\UniversalPpuConfig.exe
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\bin\Debug\UniversalPpuConfig.pdb
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.csprojResolveAssemblyReference.cache
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.FormMain.resources
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.Properties.Resources.resources
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.csproj.GenerateResource.Cache
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.exe
+N:\Project\Universal PPU\Current\PC code\UniversalPpuConfig\UniversalPpuConfig\obj\x86\Debug\UniversalPpuConfig.pdb

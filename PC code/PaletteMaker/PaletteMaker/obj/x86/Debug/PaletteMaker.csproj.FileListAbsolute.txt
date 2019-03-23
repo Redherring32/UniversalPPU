@@ -1,0 +1,15 @@
+C:\Users\Spork\AppData\Local\Temporary Projects\PaletteMaker\bin\Debug\PaletteMaker.exe
+C:\Users\Spork\AppData\Local\Temporary Projects\PaletteMaker\bin\Debug\PaletteMaker.pdb
+C:\Users\Spork\AppData\Local\Temporary Projects\PaletteMaker\obj\x86\Debug\PaletteMaker.Form1.resources
+C:\Users\Spork\AppData\Local\Temporary Projects\PaletteMaker\obj\x86\Debug\PaletteMaker.Properties.Resources.resources
+C:\Users\Spork\AppData\Local\Temporary Projects\PaletteMaker\obj\x86\Debug\PaletteMaker.csproj.GenerateResource.Cache
+C:\Users\Spork\AppData\Local\Temporary Projects\PaletteMaker\obj\x86\Debug\PaletteMaker.exe
+C:\Users\Spork\AppData\Local\Temporary Projects\PaletteMaker\obj\x86\Debug\PaletteMaker.pdb
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Debug\PaletteMaker.exe
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Debug\PaletteMaker.pdb
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\bin\Debug\PaletteMaker.exe
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\bin\Debug\PaletteMaker.pdb
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Debug\PaletteMaker.Form1.resources
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Debug\PaletteMaker.Properties.Resources.resources
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Debug\PaletteMaker.csproj.GenerateResource.Cache
+C:\Users\Spork\documents\visual studio 2010\Projects\PaletteMaker\PaletteMaker\obj\x86\Debug\PaletteMaker.csprojResolveAssemblyReference.cache

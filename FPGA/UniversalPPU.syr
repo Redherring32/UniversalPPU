@@ -1,0 +1,1837 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.22 secs
+ 
+--> Reading design: UniversalPPU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UniversalPPU.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UniversalPPU"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : UniversalPPU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\SyncAsyncReset.v" into library work
+Parsing module <SyncAsyncReset>.
+Analyzing Verilog file "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\SpriteVisible.v" into library work
+Parsing module <SpriteVisible>.
+Parsing module <PaletteRamAddr>.
+Analyzing Verilog file "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\ipcore_dir\oamRam.v" into library work
+Parsing module <oamRam>.
+Analyzing Verilog file "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\ipcore_dir\displayRam.v" into library work
+Parsing module <displayRam>.
+Analyzing Verilog file "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\ipcore_dir\colorRam.v" into library work
+Parsing module <colorRam>.
+Analyzing Verilog file "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\UniversalPpu.v" into library work
+Parsing module <UniversalPPU>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <UniversalPPU>.
+
+Elaborating module <SyncAsyncReset>.
+WARNING:HDLCompiler:1127 - "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\UniversalPpu.v" Line 208: Assignment to reset_ppuCLK_div12 ignored, since the identifier is never used
+
+Elaborating module <oamRam>.
+WARNING:HDLCompiler:1499 - "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\ipcore_dir\oamRam.v" Line 39: Empty module <oamRam> remains a black box.
+
+Elaborating module <SpriteVisible>.
+
+Elaborating module <PaletteRamAddr>.
+
+Elaborating module <displayRam>.
+WARNING:HDLCompiler:1499 - "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\ipcore_dir\displayRam.v" Line 39: Empty module <displayRam> remains a black box.
+
+Elaborating module <colorRam>.
+WARNING:HDLCompiler:1499 - "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\ipcore_dir\colorRam.v" Line 39: Empty module <colorRam> remains a black box.
+WARNING:Xst:2972 - "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\UniversalPpu.v" line 208. All outputs of instance <SAR3> of block <SyncAsyncReset> are unconnected in block <UniversalPPU>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <UniversalPPU>.
+    Related source file is "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\UniversalPpu.v".
+INFO:Xst:3210 - "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\UniversalPpu.v" line 208: Output port <resetOut> of the instance <SAR3> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <ppuCLK_div4>.
+    Found 9-bit register for signal <hCount>.
+    Found 9-bit register for signal <vCount>.
+    Found 15-bit register for signal <LoopyT>.
+    Found 3-bit register for signal <LoopyX>.
+    Found 3-bit register for signal <currFetchSprite>.
+    Found 8-bit register for signal <nextHScroll>.
+    Found 8-bit register for signal <vCount_fetch>.
+    Found 8-bit register for signal <ppuD>.
+    Found 8-bit register for signal <tileBuff0_attrTable>.
+    Found 8-bit register for signal <tileBuff0_patternTable0>.
+    Found 8-bit register for signal <tileBuff0_patternTable1>.
+    Found 8-bit register for signal <tileBuff1_attrTable>.
+    Found 8-bit register for signal <tileBuff1_patternTable0>.
+    Found 8-bit register for signal <tileBuff1_patternTable1>.
+    Found 8-bit register for signal <ppuAD_outputBuff>.
+    Found 8-bit register for signal <vCount_fetch_buff>.
+    Found 8-bit register for signal <hCount_fetch_buff>.
+    Found 8-bit register for signal <tileCurr_nameTable>.
+    Found 8-bit register for signal <tileCurr_attrTable>.
+    Found 8-bit register for signal <tileCurr_patternTable0>.
+    Found 8-bit register for signal <tileCurr_patternTable1>.
+    Found 8-bit register for signal <vramReadBuff>.
+    Found 8-bit register for signal <hCount_fetch>.
+    Found 2-bit register for signal <nameTableAddrBits>.
+    Found 2-bit register for signal <ppuAD_state>.
+    Found 2-bit register for signal <nameTableAddrBitsBuff>.
+    Found 128-bit register for signal <n0894[127:0]>.
+    Found 14-bit register for signal <ppuA>.
+    Found 24-bit register for signal <n0898>.
+    Found 6-bit register for signal <ppuA_upper>.
+    Found 1-bit register for signal <clockCount_2>.
+    Found 1-bit register for signal <nextHNameTableBit>.
+    Found 1-bit register for signal <vblFlag>.
+    Found 1-bit register for signal <byteSelectLatch>.
+    Found 1-bit register for signal <reqVramOp>.
+    Found 1-bit register for signal <ppuAD_RW>.
+    Found 1-bit register for signal <doneVramOp>.
+    Found 1-bit register for signal <spriteHitFlag>.
+    Found 1-bit register for signal <ppuCLK_div4_shift>.
+    Found 1-bit register for signal <cpuCS_N_int>.
+    Found 1-bit register for signal <cpuCS_N_int_seen>.
+    Found 1-bit register for signal <cpuINT_N>.
+    Found 192-bit register for signal <n0895[191:0]>.
+    Found 1-bit register for signal <spriteLowerHalf<0>>.
+    Found 1-bit register for signal <spriteLowerHalf<1>>.
+    Found 1-bit register for signal <spriteLowerHalf<2>>.
+    Found 1-bit register for signal <spriteLowerHalf<3>>.
+    Found 1-bit register for signal <spriteLowerHalf<4>>.
+    Found 1-bit register for signal <spriteLowerHalf<5>>.
+    Found 1-bit register for signal <spriteLowerHalf<6>>.
+    Found 1-bit register for signal <spriteLowerHalf<7>>.
+    Found 9-bit register for signal <OAMaddr>.
+    Found 2-bit register for signal <spriteByte>.
+    Found 4-bit register for signal <foundSprites>.
+    Found 6-bit register for signal <lineOAMaddr>.
+    Found 9-bit register for signal <hCount_render>.
+    Found 4-bit register for signal <hCount_fetch_delay>.
+    Found 8-bit register for signal <hCount_delay<7:0>>.
+    Found 2-bit register for signal <attrTableBits>.
+    Found 2-bit register for signal <currPatternTableBits>.
+    Found 6-bit register for signal <currentPixel>.
+    Found 64-bit register for signal <n0899[63:0]>.
+    Found 64-bit register for signal <n0900[63:0]>.
+    Found 8-bit register for signal <cpuD_obuf>.
+    Found 10-bit register for signal <vgaHCount>.
+    Found 10-bit register for signal <vgaVCount>.
+    Found 8-bit register for signal <VGA_R>.
+    Found 8-bit register for signal <VGA_G>.
+    Found 8-bit register for signal <VGA_B>.
+    Found 1-bit register for signal <VGA_HS>.
+    Found 1-bit register for signal <VGA_VS>.
+    Found 1-bit register for signal <VGA_BLANK_N>.
+    Found 8-bit register for signal <picA>.
+    Found 2-bit register for signal <led>.
+    Found 9-bit register for signal <colorRam_wAddr>.
+    Found 16-bit register for signal <colorRam_upperD>.
+    Found 8-bit register for signal <picD_buf>.
+    Found 1-bit register for signal <lineHasSprite0_ff_0>.
+    Found 1-bit register for signal <lineHasSprite0_ff_1>.
+    Found finite state machine <FSM_0> for signal <ppuAD_state>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 46                                             |
+    | Inputs             | 10                                             |
+    | Outputs            | 4                                              |
+    | Clock              | ppuCLK_div4 (rising_edge)                      |
+    | Reset              | reset_ppuCLK_div4 (negative)                   |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 00                                             |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_167_OUT> created at line 500.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_170_OUT> created at line 500.
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_174_OUT> created at line 501.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_177_OUT> created at line 501.
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_181_OUT> created at line 502.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_184_OUT> created at line 502.
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_188_OUT> created at line 503.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_191_OUT> created at line 503.
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_195_OUT> created at line 504.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_198_OUT> created at line 504.
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_202_OUT> created at line 505.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_205_OUT> created at line 505.
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_209_OUT> created at line 506.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_212_OUT> created at line 506.
+    Found 3-bit subtractor for signal <vCount[2]_vCount[0]_sub_216_OUT> created at line 507.
+    Found 3-bit subtractor for signal <PWR_1_o_vCount[2]_sub_219_OUT> created at line 507.
+    Found 9-bit subtractor for signal <hCount[8]_GND_1_o_sub_323_OUT> created at line 614.
+    Found 3-bit subtractor for signal <PWR_1_o_hCount_fetch_delay[2]_sub_346_OUT> created at line 644.
+    Found 8-bit subtractor for signal <vgaReadAddr<7:0>> created at line 966.
+    Found 9-bit adder for signal <hCount[8]_GND_1_o_add_15_OUT> created at line 239.
+    Found 9-bit adder for signal <vCount[8]_GND_1_o_add_17_OUT> created at line 244.
+    Found 8-bit adder for signal <vCount_fetch[7]_GND_1_o_add_50_OUT> created at line 317.
+    Found 8-bit adder for signal <nextHScroll[7]_GND_1_o_add_54_OUT> created at line 326.
+    Found 8-bit adder for signal <hCount_fetch[7]_GND_1_o_add_57_OUT> created at line 333.
+    Found 14-bit adder for signal <ppuRegs[6][13]_GND_1_o_add_82_OUT> created at line 419.
+    Found 8-bit adder for signal <ppuRegs[3][7]_GND_1_o_add_86_OUT> created at line 423.
+    Found 9-bit adder for signal <n1496> created at line 511.
+    Found 9-bit adder for signal <n1500> created at line 517.
+    Found 9-bit adder for signal <n1504> created at line 523.
+    Found 9-bit adder for signal <n1508> created at line 529.
+    Found 9-bit adder for signal <n1512> created at line 535.
+    Found 9-bit adder for signal <n1516> created at line 541.
+    Found 9-bit adder for signal <n1520> created at line 547.
+    Found 9-bit adder for signal <n1524> created at line 553.
+    Found 4-bit adder for signal <foundSprites[3]_GND_1_o_add_284_OUT> created at line 586.
+    Found 2-bit adder for signal <spriteByte[1]_GND_1_o_add_285_OUT> created at line 589.
+    Found 10-bit adder for signal <GND_1_o_GND_1_o_add_290_OUT> created at line 591.
+    Found 9-bit adder for signal <OAMaddr[8]_GND_1_o_add_294_OUT> created at line 595.
+    Found 9-bit adder for signal <OAMaddr[8]_GND_1_o_add_295_OUT> created at line 599.
+    Found 4-bit adder for signal <vCount[0]_GND_1_o_add_485_OUT> created at line 825.
+    Found 4-bit adder for signal <vCount[0]_GND_1_o_add_494_OUT> created at line 836.
+    Found 10-bit adder for signal <vgaHCount[9]_GND_1_o_add_661_OUT> created at line 971.
+    Found 10-bit adder for signal <vgaVCount[9]_GND_1_o_add_663_OUT> created at line 977.
+    Found 9-bit adder for signal <colorRam_wAddr[8]_GND_1_o_add_707_OUT> created at line 1053.
+    Found 64x8-bit dual-port RAM <Mram_lineOAM> for signal <lineOAM>.
+    Found 2-bit 4-to-1 multiplexer for signal <vCount_fetch[4]_tileBuff1_attrTable[7]_wide_mux_337_OUT> created at line 629.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[0][4]_paletteRAM[31][5]_wide_mux_421_OUT> created at line 691.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[1][4]_paletteRAM[31][5]_wide_mux_423_OUT> created at line 693.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[2][4]_paletteRAM[31][5]_wide_mux_425_OUT> created at line 695.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[3][4]_paletteRAM[31][5]_wide_mux_427_OUT> created at line 697.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[4][4]_paletteRAM[31][5]_wide_mux_429_OUT> created at line 699.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[5][4]_paletteRAM[31][5]_wide_mux_431_OUT> created at line 701.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[6][4]_paletteRAM[31][5]_wide_mux_433_OUT> created at line 703.
+    Found 6-bit 32-to-1 multiplexer for signal <spritePaletteRamAddr[7][4]_paletteRAM[31][5]_wide_mux_434_OUT> created at line 705.
+    Found 6-bit 32-to-1 multiplexer for signal <paletteRamAddr[4]_paletteRAM[31][5]_wide_mux_452_OUT> created at line 708.
+    Found 1-bit 8-to-1 multiplexer for signal <hCount[5]_spriteLowerHalf[7]_Mux_484_o> created at line 825.
+    Found 3-bit 8-to-1 multiplexer for signal <hCount[5]_spriteLine[7][2]_wide_mux_486_OUT> created at line 825.
+    Found 8-bit 8-to-1 multiplexer for signal <cpuA[2]_ppuRegs[7][15]_wide_mux_638_OUT> created at line 931.
+    Found 6-bit 32-to-1 multiplexer for signal <ppuRegs[6][4]_paletteRAM[31][5]_wide_mux_642_OUT> created at line 937.
+    Found 8-bit 8-to-1 multiplexer for signal <cpuA[2]_ppuRegs[7][7]_wide_mux_645_OUT> created at line 941.
+    Found 2-bit 8-to-1 multiplexer for signal <n1534> created at line 644.
+    Found 2-bit 8-to-1 multiplexer for signal <n1535> created at line 644.
+    Found 1-bit tristate buffer for signal <ppuAD<7>> created at line 737
+    Found 1-bit tristate buffer for signal <ppuAD<6>> created at line 737
+    Found 1-bit tristate buffer for signal <ppuAD<5>> created at line 737
+    Found 1-bit tristate buffer for signal <ppuAD<4>> created at line 737
+    Found 1-bit tristate buffer for signal <ppuAD<3>> created at line 737
+    Found 1-bit tristate buffer for signal <ppuAD<2>> created at line 737
+    Found 1-bit tristate buffer for signal <ppuAD<1>> created at line 737
+    Found 1-bit tristate buffer for signal <ppuAD<0>> created at line 737
+    Found 1-bit tristate buffer for signal <cpuD<7>> created at line 927
+    Found 1-bit tristate buffer for signal <cpuD<6>> created at line 927
+    Found 1-bit tristate buffer for signal <cpuD<5>> created at line 927
+    Found 1-bit tristate buffer for signal <cpuD<4>> created at line 927
+    Found 1-bit tristate buffer for signal <cpuD<3>> created at line 927
+    Found 1-bit tristate buffer for signal <cpuD<2>> created at line 927
+    Found 1-bit tristate buffer for signal <cpuD<1>> created at line 927
+    Found 1-bit tristate buffer for signal <cpuD<0>> created at line 927
+    Found 1-bit tristate buffer for signal <picBUS<7>> created at line 1034
+    Found 1-bit tristate buffer for signal <picBUS<6>> created at line 1034
+    Found 1-bit tristate buffer for signal <picBUS<5>> created at line 1034
+    Found 1-bit tristate buffer for signal <picBUS<4>> created at line 1034
+    Found 1-bit tristate buffer for signal <picBUS<3>> created at line 1034
+    Found 1-bit tristate buffer for signal <picBUS<2>> created at line 1034
+    Found 1-bit tristate buffer for signal <picBUS<1>> created at line 1034
+    Found 1-bit tristate buffer for signal <picBUS<0>> created at line 1034
+    Found 9-bit comparator greater for signal <hCount[8]_PWR_1_o_LessThan_15_o> created at line 238
+    Found 9-bit comparator greater for signal <vCount[8]_PWR_1_o_LessThan_17_o> created at line 243
+    Found 8-bit comparator greater for signal <vCount_fetch[7]_PWR_1_o_LessThan_50_o> created at line 316
+    Found 8-bit comparator greater for signal <nextHScroll[7]_PWR_1_o_LessThan_56_o> created at line 327
+    Found 8-bit comparator greater for signal <hCount_fetch[7]_PWR_1_o_LessThan_57_o> created at line 332
+    Found 14-bit comparator lessequal for signal <n0151> created at line 466
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0009_LessThan_225_o> created at line 511
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0010_LessThan_231_o> created at line 517
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0011_LessThan_237_o> created at line 523
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0012_LessThan_243_o> created at line 529
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0013_LessThan_249_o> created at line 535
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0014_LessThan_255_o> created at line 541
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0015_LessThan_261_o> created at line 547
+    Found 9-bit comparator greater for signal <vCount[8]_BUS_0016_LessThan_267_o> created at line 553
+    Found 9-bit comparator greater for signal <vCount[8]_GND_1_o_LessThan_271_o> created at line 560
+    Found 9-bit comparator greater for signal <hCount[8]_GND_1_o_LessThan_274_o> created at line 562
+    Found 9-bit comparator lessequal for signal <n0359> created at line 591
+    Found 10-bit comparator greater for signal <GND_1_o_GND_1_o_LessThan_292_o> created at line 591
+    Found 3-bit comparator greater for signal <hCount_fetch_delay[2]_ppuRegs[5][2]_LessThan_336_o> created at line 637
+    Found 9-bit comparator greater for signal <hCount_render[8]_GND_1_o_LessThan_452_o> created at line 707
+    Found 9-bit comparator greater for signal <hCount_render[8]_PWR_1_o_LessThan_458_o> created at line 714
+    Found 9-bit comparator greater for signal <hCount[8]_PWR_1_o_LessThan_464_o> created at line 764
+    Found 9-bit comparator greater for signal <n0560> created at line 764
+    Found 9-bit comparator greater for signal <hCount[8]_PWR_1_o_LessThan_466_o> created at line 764
+    Found 1-bit comparator not equal for signal <n0630> created at line 852
+    Found 9-bit comparator greater for signal <hCount[8]_PWR_1_o_LessThan_564_o> created at line 894
+    Found 9-bit comparator greater for signal <n0673> created at line 894
+    Found 9-bit comparator greater for signal <hCount[8]_PWR_1_o_LessThan_566_o> created at line 894
+    Found 10-bit comparator greater for signal <vgaHCount[9]_PWR_1_o_LessThan_661_o> created at line 969
+    Found 10-bit comparator lessequal for signal <vgaVCount[9]_PWR_1_o_LessThan_663_o> created at line 976
+    Found 10-bit comparator lessequal for signal <n0791> created at line 993
+    Found 10-bit comparator greater for signal <vgaHCount[9]_PWR_1_o_LessThan_672_o> created at line 993
+    Found 10-bit comparator greater for signal <vgaVCount[9]_GND_1_o_LessThan_673_o> created at line 993
+    Found 10-bit comparator lessequal for signal <n0803> created at line 1007
+    Found 10-bit comparator greater for signal <vgaHCount[9]_PWR_1_o_LessThan_682_o> created at line 1007
+    Found 10-bit comparator lessequal for signal <n0809> created at line 1013
+    Found 10-bit comparator greater for signal <vgaVCount[9]_GND_1_o_LessThan_685_o> created at line 1013
+    Found 10-bit comparator lessequal for signal <n0815> created at line 1019
+    WARNING:Xst:2404 -  FFs/Latches <VGA_SYNC_N<0:0>> (without init value) have a constant value of 0 in block <UniversalPPU>.
+    Summary:
+	inferred  41 RAM(s).
+	inferred  43 Adder/Subtractor(s).
+	inferred 852 D-type flip-flop(s).
+	inferred  38 Comparator(s).
+	inferred 209 Multiplexer(s).
+	inferred  24 Tristate(s).
+	inferred   1 Finite State Machine(s).
+Unit <UniversalPPU> synthesized.
+
+Synthesizing Unit <SyncAsyncReset>.
+    Related source file is "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\SyncAsyncReset.v".
+    Found 1-bit register for signal <resetOut>.
+    Found 1-bit register for signal <resetQ>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <SyncAsyncReset> synthesized.
+
+Synthesizing Unit <SpriteVisible>.
+    Related source file is "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\SpriteVisible.v".
+    Found 2-bit register for signal <patternTableOut>.
+    Found 3-bit subtractor for signal <n0057> created at line 7.
+    Found 3-bit subtractor for signal <screenX[2]_spriteX[2]_sub_18_OUT> created at line 9.
+    Found 9-bit adder for signal <n0043> created at line 4.
+    Found 9-bit adder for signal <n0044> created at line 4.
+    Found 9-bit adder for signal <GND_4_o_GND_4_o_add_7_OUT> created at line 4.
+    Found 3-bit adder for signal <PWR_8_o_spriteX[2]_add_12_OUT> created at line 7.
+    Found 2-bit 8-to-1 multiplexer for signal <n0048> created at line 9.
+    Found 2-bit 8-to-1 multiplexer for signal <n0049> created at line 9.
+    Found 8-bit comparator lessequal for signal <n0000> created at line 4
+    Found 9-bit comparator greater for signal <GND_4_o_BUS_0001_LessThan_4_o> created at line 4
+    Found 9-bit comparator lessequal for signal <n0006> created at line 4
+    Found 9-bit comparator greater for signal <GND_4_o_GND_4_o_LessThan_9_o> created at line 4
+    Found 8-bit comparator greater for signal <spriteY[7]_PWR_8_o_LessThan_10_o> created at line 4
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+	inferred   3 Multiplexer(s).
+Unit <SpriteVisible> synthesized.
+
+Synthesizing Unit <PaletteRamAddr>.
+    Related source file is "\\freenas\main\phil\Project\UniversalPPU\Current\FPGA\Prototype\universalPpu\SpriteVisible.v".
+    Found 5-bit register for signal <addr>.
+    Summary:
+	inferred   5 D-type flip-flop(s).
+Unit <PaletteRamAddr> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 41
+ 64x8-bit dual-port RAM                                : 41
+# Adders/Subtractors                                   : 91
+ 10-bit adder                                          : 3
+ 14-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 8
+ 3-bit subtractor                                      : 33
+ 4-bit adder                                           : 3
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 37
+ 9-bit subtractor                                      : 1
+# Registers                                            : 100
+ 1-bit register                                        : 30
+ 10-bit register                                       : 2
+ 128-bit register                                      : 1
+ 14-bit register                                       : 1
+ 15-bit register                                       : 1
+ 16-bit register                                       : 1
+ 192-bit register                                      : 1
+ 2-bit register                                        : 14
+ 24-bit register                                       : 1
+ 3-bit register                                        : 2
+ 4-bit register                                        : 2
+ 5-bit register                                        : 9
+ 6-bit register                                        : 3
+ 64-bit register                                       : 2
+ 8-bit register                                        : 25
+ 9-bit register                                        : 5
+# Comparators                                          : 78
+ 1-bit comparator not equal                            : 1
+ 10-bit comparator greater                             : 6
+ 10-bit comparator lessequal                           : 5
+ 14-bit comparator lessequal                           : 1
+ 3-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 11
+ 8-bit comparator lessequal                            : 8
+ 9-bit comparator greater                              : 36
+ 9-bit comparator lessequal                            : 9
+# Multiplexers                                         : 233
+ 1-bit 2-to-1 multiplexer                              : 54
+ 1-bit 8-to-1 multiplexer                              : 1
+ 128-bit 2-to-1 multiplexer                            : 3
+ 15-bit 2-to-1 multiplexer                             : 2
+ 2-bit 2-to-1 multiplexer                              : 16
+ 2-bit 4-to-1 multiplexer                              : 1
+ 2-bit 8-to-1 multiplexer                              : 18
+ 3-bit 2-to-1 multiplexer                              : 8
+ 3-bit 8-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 55
+ 6-bit 32-to-1 multiplexer                             : 10
+ 8-bit 2-to-1 multiplexer                              : 56
+ 8-bit 8-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 6
+# Tristates                                            : 24
+ 1-bit tristate buffer                                 : 24
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <ipcore_dir/displayRam.ngc>.
+Reading core <ipcore_dir/colorRam.ngc>.
+Reading core <ipcore_dir/oamRam.ngc>.
+Loading core <displayRam> for timing and area information for instance <theDisplayRam>.
+Loading core <colorRam> for timing and area information for instance <ColorRAM>.
+Loading core <oamRam> for timing and area information for instance <theOamRam>.
+WARNING:Xst:1710 - FF/Latch <addr_4> (without init value) has a constant value of 0 in block <PA1>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <picD_buf_7> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <vCount_fetch_buff_3> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <vCount_fetch_buff_4> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_0> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_1> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_2> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_3> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_4> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2404 -  FFs/Latches <picD_buf<7:7>> (without init value) have a constant value of 0 in block <UniversalPPU>.
+
+Synthesizing (advanced) Unit <UniversalPPU>.
+The following registers are absorbed into counter <vgaHCount>: 1 register on signal <vgaHCount>.
+The following registers are absorbed into counter <vgaVCount>: 1 register on signal <vgaVCount>.
+The following registers are absorbed into counter <colorRam_wAddr>: 1 register on signal <colorRam_wAddr>.
+The following registers are absorbed into counter <hCount>: 1 register on signal <hCount>.
+The following registers are absorbed into counter <vCount>: 1 register on signal <vCount>.
+The following registers are absorbed into counter <foundSprites>: 1 register on signal <foundSprites>.
+INFO:Xst:3231 - The small RAM <Mram_lineOAM1> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"00000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"00010")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM2> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"00110")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM3> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"00100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM4> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"01010")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM5> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"01000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM6> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"01110")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM8> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"10010")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM7> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"01100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM9> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"10000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM10> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"10110")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM11> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"10100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM12> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"11010")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM13> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"11000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM15> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"11100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM14> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],"11110")> |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM16> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"00011")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM17> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"00000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM18> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"00010")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM19> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"00111")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM20> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"00100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM22> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"01011")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM21> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"00110")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM23> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"01000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM24> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"01010")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM25> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"01111")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM26> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"01100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM27> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"01110")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM29> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"10000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM28> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"10011")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM30> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"10010")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM31> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"10111")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM32> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"10100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM33> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"10110")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM34> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"11011")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM36> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"11010")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM35> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"11000")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM37> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"11111")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM39> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"11110")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM38> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(vCount<0>,"11100")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3231 - The small RAM <Mram_lineOAM40> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     clkA           | connected to signal <ppuCLK_div4>   | rise     |
+    |     weA            | connected to internal node          | high     |
+    |     addrA          | connected to signal <lineOAMaddr>   |          |
+    |     diA            | connected to signal <_n1758>        |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 64-word x 8-bit                     |          |
+    |     addrB          | connected to signal <(_n1924[0],hCount<5:3>,"01")> |          |
+    |     doB            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <UniversalPPU> synthesized (advanced).
+WARNING:Xst:2677 - Node <vCount_fetch_buff_3> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <vCount_fetch_buff_4> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_0> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_1> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_2> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_3> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <hCount_fetch_buff_4> of sequential type is unconnected in block <UniversalPPU>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 41
+ 64x8-bit dual-port distributed RAM                    : 41
+# Adders/Subtractors                                   : 85
+ 10-bit adder                                          : 1
+ 14-bit adder                                          : 1
+ 2-bit adder                                           : 1
+ 3-bit adder                                           : 8
+ 3-bit subtractor                                      : 33
+ 4-bit adder                                           : 2
+ 8-bit adder                                           : 3
+ 8-bit subtractor                                      : 1
+ 9-bit adder                                           : 34
+ 9-bit subtractor                                      : 1
+# Counters                                             : 6
+ 10-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 9-bit up counter                                      : 3
+# Registers                                            : 858
+ Flip-Flops                                            : 858
+# Comparators                                          : 78
+ 1-bit comparator not equal                            : 1
+ 10-bit comparator greater                             : 6
+ 10-bit comparator lessequal                           : 5
+ 14-bit comparator lessequal                           : 1
+ 3-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 11
+ 8-bit comparator lessequal                            : 8
+ 9-bit comparator greater                              : 36
+ 9-bit comparator lessequal                            : 9
+# Multiplexers                                         : 359
+ 1-bit 2-to-1 multiplexer                              : 204
+ 1-bit 8-to-1 multiplexer                              : 3
+ 128-bit 2-to-1 multiplexer                            : 3
+ 15-bit 2-to-1 multiplexer                             : 1
+ 2-bit 2-to-1 multiplexer                              : 12
+ 2-bit 4-to-1 multiplexer                              : 1
+ 2-bit 8-to-1 multiplexer                              : 17
+ 3-bit 2-to-1 multiplexer                              : 8
+ 3-bit 8-to-1 multiplexer                              : 1
+ 6-bit 2-to-1 multiplexer                              : 55
+ 6-bit 32-to-1 multiplexer                             : 10
+ 8-bit 2-to-1 multiplexer                              : 39
+ 8-bit 8-to-1 multiplexer                              : 2
+ 9-bit 2-to-1 multiplexer                              : 3
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <PA1/addr_4> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <ppuAD_state[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 00    | 00
+ 01    | 01
+ 10    | 10
+ 11    | 11
+-------------------
+WARNING:Xst:2677 - Node <Mram_lineOAM41> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM42> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM210> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM211> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM44> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM45> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM61> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM62> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM81> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM82> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM101> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM102> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM121> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM122> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM141> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM142> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM431> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM2121> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM461> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM631> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM831> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM1031> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM1231> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM1431> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM1832> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM2152> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM2432> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM2732> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM3032> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM3332> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM3632> of sequential type is unconnected in block <UniversalPPU>.
+WARNING:Xst:2677 - Node <Mram_lineOAM3932> of sequential type is unconnected in block <UniversalPPU>.
+
+Optimizing unit <UniversalPPU> ...
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_0> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_1> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_2> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_3> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_4> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_5> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_6> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_7> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_8> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_9> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_10> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_11> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_12> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_13> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_14> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_15> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_13> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_14> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_15> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_56> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_57> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_58> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_59> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_60> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_61> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_62> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_63> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_72> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_73> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_74> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_75> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_76> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_77> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_78> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_79> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paletteRAM_31_90> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paletteRAM_31_91> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paletteRAM_31_92> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paletteRAM_31_93> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paletteRAM_31_94> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <paletteRAM_31_95> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_0> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_1> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_2> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_3> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_4> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_5> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_6> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_7> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_8> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_9> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_10> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_11> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_12> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <SpriteVisible> ...
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_127> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_126> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_125> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_124> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_123> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_122> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_121> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_120> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_111> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_110> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_109> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_108> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_107> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_106> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_105> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_104> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_95> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_94> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_93> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_92> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_91> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_90> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_89> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_88> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_55> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_54> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_53> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_52> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_51> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_50> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_49> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <ppuRegs_7_48> (without init value) has a constant value of 0 in block <UniversalPPU>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <OAMaddr_0> in Unit <UniversalPPU> is equivalent to the following FF/Latch, which will be removed : <spriteByte_0> 
+INFO:Xst:2261 - The FF/Latch <OAMaddr_1> in Unit <UniversalPPU> is equivalent to the following FF/Latch, which will be removed : <spriteByte_1> 
+INFO:Xst:2261 - The FF/Latch <LoopyX_0> in Unit <UniversalPPU> is equivalent to the following FF/Latch, which will be removed : <ppuRegs_7_32> 
+INFO:Xst:2261 - The FF/Latch <LoopyX_1> in Unit <UniversalPPU> is equivalent to the following FF/Latch, which will be removed : <ppuRegs_7_33> 
+INFO:Xst:2261 - The FF/Latch <LoopyX_2> in Unit <UniversalPPU> is equivalent to the following FF/Latch, which will be removed : <ppuRegs_7_34> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UniversalPPU, actual ratio is 62.
+FlipFlop hCount_0 has been replicated 1 time(s)
+FlipFlop hCount_1 has been replicated 1 time(s)
+FlipFlop hCount_2 has been replicated 1 time(s)
+FlipFlop hCount_6 has been replicated 1 time(s)
+FlipFlop hCount_7 has been replicated 1 time(s)
+FlipFlop hCount_8 has been replicated 1 time(s)
+FlipFlop ppuRegs_7_16 has been replicated 3 time(s)
+FlipFlop ppuRegs_7_17 has been replicated 2 time(s)
+FlipFlop vCount_0 has been replicated 1 time(s)
+FlipFlop vCount_1 has been replicated 1 time(s)
+FlipFlop vCount_2 has been replicated 1 time(s)
+FlipFlop vCount_3 has been replicated 1 time(s)
+FlipFlop vCount_4 has been replicated 3 time(s)
+FlipFlop vCount_5 has been replicated 3 time(s)
+FlipFlop vCount_6 has been replicated 3 time(s)
+FlipFlop vCount_7 has been replicated 3 time(s)
+FlipFlop vCount_8 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 863
+ Flip-Flops                                            : 863
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : UniversalPPU.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 2657
+#      GND                         : 4
+#      INV                         : 24
+#      LUT1                        : 30
+#      LUT2                        : 124
+#      LUT3                        : 124
+#      LUT4                        : 216
+#      LUT5                        : 464
+#      LUT6                        : 1373
+#      MUXCY                       : 102
+#      MUXF7                       : 125
+#      MUXF8                       : 6
+#      VCC                         : 4
+#      XORCY                       : 61
+# FlipFlops/Latches                : 868
+#      FD                          : 56
+#      FD_1                        : 8
+#      FDC                         : 55
+#      FDC_1                       : 8
+#      FDCE                        : 231
+#      FDCE_1                      : 32
+#      FDE                         : 241
+#      FDE_1                       : 128
+#      FDP                         : 1
+#      FDPE                        : 1
+#      FDR                         : 83
+#      FDRE                        : 23
+#      FDSE                        : 1
+# RAMS                             : 164
+#      RAM64M                      : 66
+#      RAM64X1D                    : 66
+#      RAMB16BWER                  : 31
+#      RAMB8BWER                   : 1
+# Clock Buffers                    : 4
+#      BUFG                        : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 84
+#      IBUF                        : 16
+#      IOBUF                       : 24
+#      OBUF                        : 44
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             868  out of  11440     7%  
+ Number of Slice LUTs:                 2751  out of   5720    48%  
+    Number used as Logic:              2355  out of   5720    41%  
+    Number used as Memory:              396  out of   1440    27%  
+       Number used as RAM:              396
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   2984
+   Number with an unused Flip Flop:    2116  out of   2984    70%  
+   Number with an unused LUT:           233  out of   2984     7%  
+   Number of fully used LUT-FF pairs:   635  out of   2984    21%  
+   Number of unique control sets:        56
+
+IO Utilization: 
+ Number of IOs:                          86
+ Number of bonded IOBs:                  86  out of    102    84%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:               32  out of     32   100%  
+    Number using Block RAM only:         32
+ Number of BUFG/BUFGCTRLs:                4  out of     16    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+picCLK                             | BUFGP                  | 43    |
+CLOCK_25                           | IBUF+BUFG              | 83    |
+ppuCLK                             | BUFGP                  | 5     |
+ppuCLK_div4                        | BUFG                   | 932   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 9.198ns (Maximum Frequency: 108.721MHz)
+   Minimum input arrival time before clock: 7.432ns
+   Maximum output required time after clock: 5.319ns
+   Maximum combinational path delay: 5.883ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'picCLK'
+  Clock period: 4.293ns (frequency: 232.945MHz)
+  Total number of paths / destination ports: 649 / 88
+-------------------------------------------------------------------------
+Delay:               4.293ns (Levels of Logic = 2)
+  Source:            picA_2 (FF)
+  Destination:       colorRam_upperD_0 (FF)
+  Source Clock:      picCLK rising
+  Destination Clock: picCLK rising
+
+  Data Path: picA_2 to colorRam_upperD_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             14   0.447   1.062  picA_2 (picA_2)
+     LUT6:I4->O           18   0.203   1.050  colorRam_upperD[15]_colorRam_upperD[15]_mux_718_OUT<0>11 (colorRam_upperD[15]_colorRam_upperD[15]_mux_718_OUT<0>1)
+     LUT5:I4->O           16   0.205   1.004  _n2316_inv1 (_n2316_inv)
+     FDE:CE                    0.322          colorRam_upperD_0
+    ----------------------------------------
+    Total                      4.293ns (1.177ns logic, 3.116ns route)
+                                       (27.4% logic, 72.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLOCK_25'
+  Clock period: 5.774ns (frequency: 173.176MHz)
+  Total number of paths / destination ports: 2657 / 475
+-------------------------------------------------------------------------
+Delay:               5.774ns (Levels of Logic = 3)
+  Source:            vgaVCount_8 (FF)
+  Destination:       vgaVCount_0 (FF)
+  Source Clock:      CLOCK_25 rising
+  Destination Clock: CLOCK_25 rising
+
+  Data Path: vgaVCount_8 to vgaVCount_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            35   0.447   1.679  vgaVCount_8 (vgaVCount_8)
+     LUT5:I0->O            1   0.203   0.808  _n19423_SW0 (N38)
+     LUT6:I3->O            1   0.205   0.944  _n19423 (_n1942_bdd0)
+     LUT6:I0->O           10   0.203   0.856  _n194214 (_n1942)
+     FDRE:R                    0.430          vgaVCount_0
+    ----------------------------------------
+    Total                      5.774ns (1.488ns logic, 4.286ns route)
+                                       (25.8% logic, 74.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ppuCLK'
+  Clock period: 2.278ns (frequency: 438.962MHz)
+  Total number of paths / destination ports: 7 / 7
+-------------------------------------------------------------------------
+Delay:               2.278ns (Levels of Logic = 1)
+  Source:            SAR1/resetOut (FF)
+  Destination:       clockCount_2 (FF)
+  Source Clock:      ppuCLK rising
+  Destination Clock: ppuCLK rising
+
+  Data Path: SAR1/resetOut to clockCount_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.447   0.579  SAR1/resetOut (SAR1/resetOut)
+     INV:I->O              2   0.206   0.616  reset_ppuCLK_inv1_INV_0 (reset_ppuCLK_inv)
+     FDC:CLR                   0.430          clockCount_2
+    ----------------------------------------
+    Total                      2.278ns (1.083ns logic, 1.195ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'ppuCLK_div4'
+  Clock period: 9.198ns (frequency: 108.721MHz)
+  Total number of paths / destination ports: 38156 / 3752
+-------------------------------------------------------------------------
+Delay:               4.599ns (Levels of Logic = 2)
+  Source:            vCount_0_1 (FF)
+  Destination:       spritePatternTableBits0_7_0 (FF)
+  Source Clock:      ppuCLK_div4 rising
+  Destination Clock: ppuCLK_div4 falling
+
+  Data Path: vCount_0_1 to spritePatternTableBits0_7_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.447   0.808  vCount_0_1 (vCount_0_1)
+     LUT3:I0->O            6   0.205   0.973  GND_1_o_GND_1_o_equal_272_o<8>1_SW0 (N258)
+     LUT6:I3->O           64   0.205   1.639  vCount[8]_ppuRegs[1][4]_AND_124_o1_1 (vCount[8]_ppuRegs[1][4]_AND_124_o1)
+     FDE_1:CE                  0.322          spritePatternTableBits0_7_0
+    ----------------------------------------
+    Total                      4.599ns (1.179ns logic, 3.420ns route)
+                                       (25.6% logic, 74.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'picCLK'
+  Total number of paths / destination ports: 164 / 89
+-------------------------------------------------------------------------
+Offset:              4.883ns (Levels of Logic = 3)
+  Source:            picRW (PAD)
+  Destination:       colorRam_wAddr_0 (FF)
+  Destination Clock: picCLK rising
+
+  Data Path: picRW to colorRam_wAddr_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            13   1.222   1.277  picRW_IBUF (picRW_IBUF)
+     LUT5:I0->O            1   0.203   0.827  _n2305_inv_SW0 (N54)
+     LUT6:I2->O            9   0.203   0.829  _n2305_inv (_n2305_inv)
+     FDE:CE                    0.322          colorRam_wAddr_0
+    ----------------------------------------
+    Total                      4.883ns (1.950ns logic, 2.933ns route)
+                                       (39.9% logic, 60.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ppuCLK_div4'
+  Total number of paths / destination ports: 2281 / 765
+-------------------------------------------------------------------------
+Offset:              7.432ns (Levels of Logic = 3)
+  Source:            cpuA<1> (PAD)
+  Destination:       paletteRAM_31_0 (FF)
+  Destination Clock: ppuCLK_div4 rising
+
+  Data Path: cpuA<1> to paletteRAM_31_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           138   1.222   2.205  cpuA_1_IBUF (cpuA_1_IBUF)
+     LUT3:I0->O           16   0.205   1.233  Mmux_cpuA[2]_cpuA[2]_mux_649_OUT1211 (Mmux_cpuA[2]_cpuA[2]_mux_649_OUT121)
+     LUT5:I2->O          186   0.205   2.040  _n2237_inv1 (_n2237_inv)
+     FDE:CE                    0.322          paletteRAM_31_0
+    ----------------------------------------
+    Total                      7.432ns (1.954ns logic, 5.478ns route)
+                                       (26.3% logic, 73.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'ppuCLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.119ns (Levels of Logic = 2)
+  Source:            cpuRST_N (PAD)
+  Destination:       SAR1/resetOut (FF)
+  Destination Clock: ppuCLK rising
+
+  Data Path: cpuRST_N to SAR1/resetOut
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.222   0.579  cpuRST_N_IBUF (cpuRST_N_IBUF)
+     INV:I->O              4   0.206   0.683  SAR1/resetIn_inv1_INV_0 (SAR1/resetIn_inv)
+     FDC:CLR                   0.430          SAR1/resetQ
+    ----------------------------------------
+    Total                      3.119ns (1.858ns logic, 1.261ns route)
+                                       (59.6% logic, 40.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLOCK_25'
+  Total number of paths / destination ports: 27 / 27
+-------------------------------------------------------------------------
+Offset:              3.597ns (Levels of Logic = 1)
+  Source:            VGA_R_7 (FF)
+  Destination:       VGA_R<7> (PAD)
+  Source Clock:      CLOCK_25 rising
+
+  Data Path: VGA_R_7 to VGA_R<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.447   0.579  VGA_R_7 (VGA_R_7)
+     OBUF:I->O                 2.571          VGA_R_7_OBUF (VGA_R<7>)
+    ----------------------------------------
+    Total                      3.597ns (3.018ns logic, 0.579ns route)
+                                       (83.9% logic, 16.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ppuCLK_div4'
+  Total number of paths / destination ports: 47 / 27
+-------------------------------------------------------------------------
+Offset:              5.319ns (Levels of Logic = 2)
+  Source:            ppuAD_state_FSM_FFd2 (FF)
+  Destination:       ppuAD<7> (PAD)
+  Source Clock:      ppuCLK_div4 rising
+
+  Data Path: ppuAD_state_FSM_FFd2 to ppuAD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             25   0.447   1.297  ppuAD_state_FSM_FFd2 (ppuAD_state_FSM_FFd2)
+     LUT2:I0->O            8   0.203   0.802  ppuAD_state[0]_ppuAD_state[1]_XOR_103_o_inv1 (ppuAD_state[0]_ppuAD_state[1]_XOR_103_o_inv)
+     IOBUF:T->IO               2.571          ppuAD_7_IOBUF (ppuAD<7>)
+    ----------------------------------------
+    Total                      5.319ns (3.221ns logic, 2.098ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'picCLK'
+  Total number of paths / destination ports: 17 / 10
+-------------------------------------------------------------------------
+Offset:              4.956ns (Levels of Logic = 2)
+  Source:            picA_1 (FF)
+  Destination:       picBUS<1> (PAD)
+  Source Clock:      picCLK rising
+
+  Data Path: picA_1 to picBUS<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             23   0.447   1.154  picA_1 (picA_1)
+     LUT3:I2->O            1   0.205   0.579  Mmux_picD_buf[7]_picA[7]_mux_691_OUT21 (picBUS_1_IOBUF)
+     IOBUF:I->IO               2.571          picBUS_1_IOBUF (picBUS<1>)
+    ----------------------------------------
+    Total                      4.956ns (3.223ns logic, 1.733ns route)
+                                       (65.0% logic, 35.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'ppuCLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.647ns (Levels of Logic = 2)
+  Source:            ppuCLK_div4_shift (FF)
+  Destination:       ppuWR_N (PAD)
+  Source Clock:      ppuCLK rising
+
+  Data Path: ppuCLK_div4_shift to ppuWR_N
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.845  ppuCLK_div4_shift (ppuCLK_div4_shift)
+     LUT3:I0->O            1   0.205   0.579  ppuWR_N1 (ppuWR_N_OBUF)
+     OBUF:I->O                 2.571          ppuWR_N_OBUF (ppuWR_N)
+    ----------------------------------------
+    Total                      4.647ns (3.223ns logic, 1.424ns route)
+                                       (69.4% logic, 30.6% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 35 / 18
+-------------------------------------------------------------------------
+Delay:               5.883ns (Levels of Logic = 3)
+  Source:            cpuRW (PAD)
+  Destination:       cpuD<7> (PAD)
+
+  Data Path: cpuRW to cpuD<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            15   1.222   1.086  cpuRW_IBUF (cpuRW_IBUF)
+     LUT2:I0->O            8   0.203   0.802  cpuD_dir_inv1 (cpuD_dir_inv)
+     IOBUF:T->IO               2.571          cpuD_7_IOBUF (cpuD<7>)
+    ----------------------------------------
+    Total                      5.883ns (3.996ns logic, 1.887ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLOCK_25
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLOCK_25       |    5.774|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock picCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+picCLK         |    4.293|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ppuCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ppuCLK         |    2.278|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock ppuCLK_div4
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+ppuCLK_div4    |    7.873|    2.803|    4.599|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 23.94 secs
+ 
+--> 
+
+Total memory usage is 282620 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  142 (   0 filtered)
+Number of infos    :   48 (   0 filtered)
+
